@@ -3,7 +3,7 @@
   padding: 30px; }
 
 .purchase-details h2 {
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 700;
   padding-bottom: 30px; }
 
@@ -12,4 +12,14 @@
 
 table td {
   font-size: 19px;
-  font-weight: bold; }
+  font-weight: 300; }
+
+.form-label-bold {
+  font-size: 19px;
+  margin-bottom: 5px; }
+
+#building-and-street {
+  margin-bottom: 10px; }
+
+#postcode {
+  width: 100px; }
