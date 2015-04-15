@@ -7,7 +7,10 @@
 {{$content}}
 
 <main id="content" role="main">
-
+	<div class="back">
+		<a href="#">&#9664; Back</a>
+	</div>
+	
 	<h1 class="heading-xlarge">Make your payment</h1>
 
 		<div class="purchase-details"> 
@@ -20,11 +23,11 @@
 			    </thead>
 			    <tbody>
 			      <tr>
-			        <td>Product</td>
+			        <td>Product:</td>
 			        <td>Volcano Insurance</td>
 			      </tr>
 			      <tr>
-			        <td>Amount</td>
+			        <td>Amount:</td>
 			        <td>£2,500</td>
 			      </tr>
 			      <!-- <tr>
@@ -35,56 +38,31 @@
 			  </table>
 		</div>
 
-  <h2 class="heading-large">PayPoint information</h2>
+  <h2 class="heading-large">Pay by cash via PayPoint</h2>
 
-	<div class="form-group">
-		<label class="form-label-bold" for="full-name">
-	    Full name
-	    <span class="form-hint">As it appears on card</span>
-	  	</label>
-	  	<input class="form-control" id="full-name" type="text">
+  <div class="grid-row">
+	    <div class="column-two-thirds">
+
+			<div class="paypoint information">
+				<p> Take this barcode to anywhere you see the PayPoint sign.
+				</p>
+			<div class="barcode">
+				<img src="/public/images/barcode-paypoint.png">
+			</div>
+				<ul class="print-download">
+				<li><a href="#"><img src="/public/images/print-icon.png">Print it out</a></li> 
+				<li><a href="#"><img src="/public/images/save-icon.png">Download it to your phone </a></li>
+				</ul>
+			</div>
+		</div>
+
+	    <div class="column-one-third">
+			<img src="/public/images/paypoint-logo.png">
+
+	    </div>
+
 	</div>
-	<div class="form-group">
-		<label class="form-label-bold" for="card-number">
-	    Card number
-	  	</label>
-	  	<input class="form-control" id="card-number" type="text">
-	</div>
-	<div class="form-group">	
-		<label class="form-label-bold" for="card-security-number">
-	    Card security code
-	    <span class="form-hint">The three digit code at the back of your card</span>
-	  	</label>
-	  	<input class="form-control" id="security-number" type="number" pattern="[0-9]*" min="0" max="999">
-	  	<img src="images/pay-point-logo.png">
-	 </div>
-
-
-	 <div class="form-group">
-      <fieldset>
-        <legend class="form-label-bold">Expiration date</legend>
-
-        <div class="form-date">
-
-          <p class="form-hint">For example, 07/17</p>
-
-          <div class="form-group form-group-month">
-            <label for="dob-month">Month</label>
-            <input class="form-control" id="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
-          </div>
-
-          <div class="form-group form-group-month">
-            <label for="dob-year">Year</label>
-            <input class="form-control" id="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
-          </div>
-        </div>
-
-      </fieldset>
-    </div>
-
-	 <div class="form-group">
-	 	<button class="button">Make payment</button>
-	 </div>
+	
 
 
 

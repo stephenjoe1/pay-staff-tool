@@ -7,7 +7,10 @@
 {{$content}}
 
 <main id="content" role="main">
-
+	<div class="back">
+		<a href="#">&#9664; Back</a>
+	</div>
+	
 	<h1 class="heading-xlarge">Make your payment</h1>
 
 		<div class="purchase-details"> 
@@ -20,11 +23,11 @@
 			    </thead>
 			    <tbody>
 			      <tr>
-			        <td>Product</td>
+			        <td>Product:</td>
 			        <td>Volcano Insurance</td>
 			      </tr>
 			      <tr>
-			        <td>Amount</td>
+			        <td>Amount:</td>
 			        <td>£2,500</td>
 			      </tr>
 			      <!-- <tr>
@@ -56,7 +59,7 @@
 	    <span class="form-hint">The three digit code at the back of your card</span>
 	  	</label>
 	  	<input class="form-control" id="security-number" type="number" pattern="[0-9]*" min="0" max="999">
-	  	<img src="/public/images/card-security-code.png">
+	  	<div class="card-image"><img src="/public/images/card-security-code.png"></div>
 	 </div>
 
 
