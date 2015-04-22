@@ -14,6 +14,7 @@
 	// border: 1px solid black;
 	background-color: #D5ECEA;
 	padding: 30px;
+	margin-bottom: 30px;
 }
 
 .change-selection a {
@@ -38,6 +39,27 @@
 	font-size: 24px;
 	font-weight: 700;
 	padding-bottom: 30px;
+}
+
+.payment-confirmed {
+	background-color: #00823B;
+	color: white;
+	padding: 30px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+.payment-confirmed h1 {
+	font-size: 36px;
+	font-weight: 700;
+	padding-bottom: 30px;
+}
+.payment-confirmed img {
+	padding-right: 15px;
+}
+
+.payment-confirmed td {
+	color: white;
 }
 
 #security-number {
