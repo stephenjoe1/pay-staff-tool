@@ -1043,18 +1043,14 @@ ul, ol {
   border-bottom: 1px solid #005EA5; }
 
 .purchase-details {
-  background-color: #D5ECEA;
+  border: 1px solid #BFC1C3;
+  background-color: #F8F8F8;
   padding: 30px;
   margin-bottom: 30px; }
 
 .change-selection a {
   color: #005EA5;
   margin-top: 30px; }
-
-.purchase-details-small {
-  background-color: #eeeeee;
-  padding: 15px;
-  position: fixed; }
 
 .purchase-details h2 {
   font-size: 24px;
@@ -1065,6 +1061,11 @@ ul, ol {
   font-size: 24px;
   font-weight: 700;
   padding-bottom: 30px; }
+
+.purchase-details-small {
+  background-color: #eeeeee;
+  padding: 15px;
+  position: fixed; }
 
 .payment-confirmed {
   background-color: #00823B;
@@ -1082,14 +1083,16 @@ ul, ol {
   padding-right: 15px; }
 
 .payment-confirmed td {
-  color: white; }
+  color: white;
+  border-bottom-color: white;
+  font-weight: 700; }
 
 #security-number {
   width: 100px; }
 
 table td {
   font-size: 19px;
-  font-weight: 300; }
+  font-weight: 700; }
 
 .form-label-bold {
   font-size: 19px;
@@ -1118,3 +1121,6 @@ table td {
   max-height: 40px;
   padding-top: 15px;
   float: left; }
+
+.form-group button {
+  margin-top: 30px; }
