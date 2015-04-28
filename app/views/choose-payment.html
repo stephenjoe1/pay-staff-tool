@@ -1,0 +1,63 @@
+{{<layout}}
+
+{{$pageTitle}}
+	GOV.UK payment page
+{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+	<div class="back">
+		<a href="#">&#9664; Back</a>
+	</div>
+		
+<div class="grid-row">
+	<div class="column-two-thirds">
+	  <h1 class="heading-xlarge">Choose payment method</h1>
+	  	<form class="radio-nav">
+			<div class="form-group">
+			<label class="block-label" for="radio-1">
+			    <input id="radio-1" type="radio" name="radio-group" value="card-payment">
+			    Credit or Debit card
+			</label>
+			<label class="block-label" for="radio-3">
+			    <input id="radio-3" type="radio" name="radio-group" value="direct-debit-payment-1">
+			    Direct debit
+		  	</label>
+		  	<label class="block-label" for="radio-4">
+			    <input id="radio-4" type="radio" name="radio-group" value="paypal-payment">
+			    PayPal
+		  	</label>
+		  	<label class="block-label" for="radio-2">
+			    <input id="radio-2" type="radio" name="radio-group" value="cash-payment">
+			    Cash (via PayPoint)
+			</label>
+			<div class="form-group">
+		 		<button class="button">Continue</button>
+		 	</div>	 
+		 </div>
+		</form>
+	   </div>
+	    <div class="column-third">
+
+			<div class="purchase-details-small"> 
+				<h2>Payment summary</h2>
+			    
+			      <p class="purchase-info">Benefits repayment to HM Revenue & Customs</p>
+			       <!-- <h3>Payment number:</h3>
+			        	<p class="purchase-info">20150408-152006</p> -->
+			       <h3>Amount to pay:</h3>
+			       <p class="purchase-amount">£2,500</p>    
+			</div>
+		</div>
+	  </div> 
+
+	 
+
+
+
+</main>
+
+{{/content}}
+
+{{/layout}}

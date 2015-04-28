@@ -12,7 +12,8 @@
   border: 1px solid #BFC1C3;
   background-color: #F8F8F8;
   padding: 30px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  margin-top: 30px; }
 
 .change-selection a {
   color: #005EA5;
@@ -23,27 +24,35 @@
   font-weight: 700;
   padding-bottom: 30px; }
 
-.purchase-details-small h2 {
-  font-size: 24px;
-  font-weight: 700;
-  padding-bottom: 30px; }
+.purchase-info {
+  font-weight: 700; }
 
-.purchase-details-small {
-  background-color: #eeeeee;
-  padding: 15px;
-  position: fixed; }
+.purchase-amount {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: 0px; }
 
 .payment-confirmed {
-  background-color: #00823B;
+  background-color: #28A197;
   color: white;
   padding: 30px;
-  margin-bottom: 30px;
-  margin-top: 30px; }
+  margin-bottom: 10px;
+  margin-top: 30px;
+  text-align: center; }
 
 .payment-confirmed h1 {
   font-size: 36px;
   font-weight: 700;
-  padding-bottom: 30px; }
+  margin-bottom: 30px;
+  margin-top: 30px; }
+
+.payment-confirmed p {
+  font-size: 36px;
+  font-weight: 700;
+  padding-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 15px; }
 
 .payment-confirmed img {
   padding-right: 15px; }
@@ -53,12 +62,16 @@
   border-bottom-color: white;
   font-weight: 700; }
 
+.payment-type-intro {
+  max-width: 100%;
+  color: #6F777B; }
+
 #security-number {
   width: 100px; }
 
 table td {
   font-size: 19px;
-  font-weight: 700; }
+  font-weight: 300; }
 
 .form-label-bold {
   font-size: 19px;
@@ -90,3 +103,54 @@ table td {
 
 .form-group button {
   margin-top: 30px; }
+
+.DD-terms-conditions {
+  max-width: 66%;
+  font-size: 16px;
+  color: #6F777B;
+  margin-top: 30px; }
+
+.DD-terms-conditions a {
+  text-decoration: underline;
+  color: #005EA5; }
+
+.dd-images img {
+  padding-right: 15px;
+  margin-bottom: 15px; }
+
+.purchase-details-small {
+  border: 1px solid #BFC1C3;
+  background-color: #F8F8F8;
+  padding: 15px;
+  margin-top: 30px; }
+
+.purchase-details-small h2 {
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 30px; }
+
+.sticky {
+  position: fixed;
+  width: 270px;
+  top: 0;
+  z-index: 100;
+  margin-top: 30px; }
+
+.inline h2 {
+  font-weight: 700;
+  font-size: bold;
+  margin-bottom: 10px; }
+
+.check-details h2 {
+  font-size: 19px; }
+
+.check-details p {
+  font-size: 24px;
+  font-weight: bold; }
+
+@media only screen and (max-width: 480px) {
+  .sticky {
+    position: static;
+    width: 100%;
+    top: 0; }
+ }
