@@ -1,0 +1,102 @@
+{{<layout}}
+
+{{$pageTitle}}
+	GOV.UK payment page
+{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+
+		<div class="purchase-details"> 
+			<h2>Your purchase details</h2>
+				<table>
+			    <thead>
+			      <!-- <tr>
+			        <th colspan="2">Your purchase details</th>
+			      </tr> -->
+			    </thead>
+			    <tbody>
+			      <tr>
+			        <td>Product:</td>
+			        <td class="purchase-info">Benefits repayment</td>
+			      </tr>
+			      <tr>
+			       <td>Payment number:</td>
+			        <td class="purchase-info">20150408-152006</td>
+			      </tr>
+			      <tr>
+			        <td>Amount to pay:</td>
+			        <td class="purchase-info">£2,500</td>
+			      </tr>
+			    </tbody>
+			  </table>
+		</div>
+
+  <h2 class="heading-large">Direct Debit payment</h2>
+  	<div class="payment-type-intro">
+  		<p>We will use direct debit to take a one-off payment from your bank account. Please fill in your account details below.</p>
+  	</div>
+
+	<div class="form-group">
+		<label class="form-label-bold" for="full-name">
+	    Sort code
+	  	</label>
+	  	<input class="form-control" id="sort-code" type="text">
+	</div>
+	<div class="form-group">
+		<label class="form-label-bold" for="card-number">
+	    Account number
+	  	</label>
+	  	<input class="form-control" id="account-number" type="text">
+	</div>
+	<div class="form-group">	
+		<label class="form-label-bold" for="name-on-account">
+	    Name on the account
+	  	</label>
+	  	<input class="form-control" id="account-number" type="text">
+	 </div>
+
+
+	 <div class="form-group">
+      <h2 class="heading-large">Your address</h2>
+
+			<div class="form-group">
+				<label class="form-label-bold" for="building-and-street">
+			    Building and street
+			  	</label>
+			  	<input class="form-control" id="building-and-street" type="text">
+			  	<input class="form-control" id="building-and-street" type="text">
+			  	<input class="form-control" id="building-and-street" type="text">
+			</div>
+			<div class="form-group">
+				<label class="form-label-bold" for="town-or-city">
+			    Town or city
+			  	</label>
+			  	<input class="form-control" id="town-or-city" type="text">
+			</div>
+			<div class="form-group">
+				<label class="form-label-bold" for="county">
+			    County (optional)
+			  	</label>
+			  	<input class="form-control" id="county" type="text">
+			</div>
+			<div class="form-group">
+				<label class="form-label-bold" for="postcode">
+			    Postcode
+			  	</label>
+			  	<input class="form-control" id="postcode" type="text">
+			</div>
+		</div>	
+
+	 <div class="form-group">
+	 	<button class="button">Make payment</button>
+	 </div>
+
+
+
+</main>
+
+{{/content}}
+
+{{/layout}}
