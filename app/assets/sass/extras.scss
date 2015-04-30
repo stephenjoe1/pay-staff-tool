@@ -10,8 +10,8 @@
 	border-bottom: 1px solid #005EA5;
 }
 
-.purchase-details {
-	border: 1px solid #BFC1C3;
+.payment-summary {
+	border: 10px solid #DEE0E2;;
 	background-color: #F8F8F8;
 	padding: 30px;
 	margin-bottom: 30px;
@@ -24,16 +24,16 @@
 }
 
 
-.purchase-details h2 {
+.payment-summary h2 {
 	font-size: 24px;
 	font-weight: 700;
 	padding-bottom: 30px;
 }
 
-.purchase-info {
+.payment-info {
 	font-weight: 700;
 }
-.purchase-amount {
+.payment-amount {
 	font-size: 36px;
 	font-weight: 700;
 	margin-bottom: 10px;
@@ -145,8 +145,8 @@ table td {
 	margin-bottom: 15px;
 }
 
-.purchase-details-small {
-	border: 1px solid #BFC1C3;
+.payment-summary-small {
+	border: 10px solid #DEE0E2;
 	background-color: #F8F8F8;
 	padding: 15px;
 	margin-top: 30px;
@@ -154,7 +154,7 @@ table td {
 }
 
 
-.purchase-details-small h2 {
+.payment-summary-small h2 {
 	font-size: 24px;
 	font-weight: 700;
 	padding-bottom: 30px;
@@ -163,7 +163,7 @@ table td {
 
 .sticky {
     position: fixed;
-    width: 270px;
+    width: 250px;
     // width: 33%;
     // left: 0;
     top: 0;
@@ -187,16 +187,42 @@ table td {
 	font-weight: bold;
 }
 
+@media only screen and (max-width : 720px) {
+
+.sticky {
+    position: static;
+    // width: 85%;
+    // margin-top: 30px;
+    // clear: both;
+    // width: 33%;
+    // left: 0;
+    // top: 0;
+    // margin: 15px;
+    // z-index: 100;
+}
+
+.payment-summary-small {
+	position: static;
+	clear: both;
+	margin-right: 15px;
+}
+
+}
+
 @media only screen and (max-width : 480px) {
 
 .sticky {
     position: static;
-    width: 100%;
+    // width: 85%;
+    // margin-top: 30px;
+    // clear: both;
     // width: 33%;
     // left: 0;
-    top: 0;
+    // top: 0;
+    // margin: 15px;
     // z-index: 100;
 }
+
 
 }
 

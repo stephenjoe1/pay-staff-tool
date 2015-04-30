@@ -6,15 +6,15 @@ $(function(){
 });
 
 $(document).ready(function() {
-	var stickyNavTop = $('.purchase-details-small').offset().top;
+	var stickyNavTop = $('.payment-summary-small').offset().top;
 	 
 	var stickyNav = function(){
 	var scrollTop = $(window).scrollTop();
 	      
 	if (scrollTop > stickyNavTop) { 
-	    $('.purchase-details-small').addClass('sticky');
+	    $('.payment-summary-small').addClass('sticky');
 	} else {
-	    $('.purchase-details-small').removeClass('sticky'); 
+	    $('.payment-summary-small').removeClass('sticky'); 
 	}
 	};
 	 
