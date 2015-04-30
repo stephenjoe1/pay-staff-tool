@@ -1130,10 +1130,11 @@ table td {
   padding-right: 10px;
   padding-top: 15px; }
 
-.card-image img {
+img.card-image {
   max-height: 40px;
-  padding-top: 15px;
-  float: left; }
+  padding-top: 2px;
+  margin-left: 15px;
+  vertical-align: middle; }
 
 .form-group button {
   margin-top: 30px; }
