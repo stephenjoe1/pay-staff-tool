@@ -10,6 +10,20 @@
 	border-bottom: 1px solid #005EA5;
 }
 
+.paypoint-payment-summary {
+	border: 10px solid #DEE0E2;;
+	background-color: #FFFFFF;
+	padding: 30px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+.paypoint-payment-summary h2 {
+	font-size: 27px;
+	font-weight: 700;
+	padding-bottom: 15px;
+}
+
 .payment-summary {
 	border: 10px solid #DEE0E2;;
 	background-color: #F8F8F8;
@@ -110,6 +124,8 @@ table td {
 .barcode img {
 	padding: 30px;
 	border: 1px solid gray;
+	margin: auto;
+	max-width: 500px;
 }
 
 .print-download img{
@@ -194,6 +210,39 @@ h2.heading-paypoint {
 	font-size: 24px;
 	font-weight: bold;
 }
+
+// PayPal specific css
+
+.paypal {
+	margin-top: 100px;
+	color: gray;
+	font-family: Arial!important;
+	font-weight: 300;
+}
+
+.paypal-login {
+	background-color: #DEE0E2;
+}
+
+.paypal-form {
+	margin-top: 30px;
+}
+
+.paypal-login h2 {
+	margin-top: 30px;
+	margin-bottom: 0px;
+	font-size: 24px;
+	font-weight: 300;
+	font-family: helvetica neue, Arial;
+}
+
+.paypal-label {
+	font-size: 19px;
+	font-weight: 300;
+	font-family: helvetica neue, Arial;
+}
+
+
 
 @media only screen and (max-width : 720px) {
 
