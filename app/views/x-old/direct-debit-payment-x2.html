@@ -8,7 +8,7 @@
 
 <main id="content" role="main">
 
-		<div class="purchase-details"> 
+		<div class="purchase-details">
 			<h2>Your purchase details</h2>
 				<table>
 			    <thead>
@@ -19,7 +19,7 @@
 			    <tbody>
 			      <tr>
 			        <td>Product:</td>
-			        <td class="purchase-info">Benefits repayment</td>
+			        <td class="purchase-info"> {{ flow }} </td>
 			      </tr>
 			      <tr>
 			       <td>Payment number:</td>
@@ -27,7 +27,7 @@
 			      </tr>
 			      <tr>
 			        <td>Amount to pay:</td>
-			        <td class="purchase-info">£2,500</td>
+			        <td class="purchase-info"> {{ amount }} </td>
 			      </tr>
 			    </tbody>
 			  </table>
@@ -50,7 +50,7 @@
 	  	</label>
 	  	<input class="form-control" id="account-number" type="text">
 	</div>
-	<div class="form-group">	
+	<div class="form-group">
 		<label class="form-label-bold" for="name-on-account">
 	    Name on the account
 	  	</label>
@@ -87,7 +87,7 @@
 			  	</label>
 			  	<input class="form-control" id="postcode" type="text">
 			</div>
-		</div>	
+		</div>
 
 	 <div class="form-group">
 	 	<button class="button">Make payment</button>
