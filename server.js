@@ -1,14 +1,17 @@
 var path = require('path'),
     express = require('express'),
     session = require('express-session')
+    merge = require('merge'),
     routes = require(__dirname + '/app/routes.js'),
+    form_to_session = require(__dirname + '/lib/form_to_session.js'),
     app = express(),
     port = (process.env.PORT || 3000),
 
 // Grab environment variables specified in Procfile or as Heroku config vars
     username = process.env.USERNAME,
     password = process.env.PASSWORD,
-    env = process.env.NODE_ENV || 'development';
+    env = process.env.NODE_ENV || 'development',
+    defaults = {};
 
 // Authenticate against the environment-provided credentials, if running
 // the app in production (Heroku, effectively)
@@ -40,32 +43,11 @@ app.use(function (req, res, next) {
   next();
 });
 
-
-// routes (found in app/routes.js)
-
-routes.bind(app);
-
-// auto render any view that exists
-
-app.get(/^\/([^.]+)$/, function (req, res) {
-
-	var path = (req.params[0]);
-
-	res.render(path, function(err, html) {
-		if (err) {
-			console.log(err);
-			res.send(404);
-		} else {
-			res.end(html);
-		}
-	});
-
-});
-
+app.use(express.urlencoded());
 
 // Set up the session
 
-var sess = {
+var session_options = {
   secret: 'uZyJIxbeJRTDaNK3',
   cookie: {},
   unset: 'destroy'
@@ -75,7 +57,33 @@ if (app.get('env') === 'production') {
   sess.cookie.secure = true; // serve secure cookies in prod
 }
 
-app.use(session(sess));
+app.use(session(session_options));
+app.use(form_to_session());
+
+// routes (found in app/routes.js)
+
+routes.bind(app);
+
+// DEFAULT values:
+defaults.amount = 2500;
+defaults.flow = "Volcano insurance";
+
+// auto render any view that exists
+
+app.get(/^\/([^.]+)$/, function (req, res) {
+
+	var path = (req.params[0]);
+
+	res.render(path, merge(true, defaults, req.session), function(err, html) {
+		if (err) {
+			console.log(err);
+			res.send(404);
+		} else {
+			res.end(html);
+		}
+	});
+
+});
 
 // start the app
 
