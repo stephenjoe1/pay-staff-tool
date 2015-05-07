@@ -1,5 +1,6 @@
 var path = require('path'),
     express = require('express'),
+    session = require('express-session')
     routes = require(__dirname + '/app/routes.js'),
     app = express(),
     port = (process.env.PORT || 3000),
@@ -30,7 +31,7 @@ app.use('/public', express.static(__dirname + '/public'));
 app.use('/public', express.static(__dirname + '/govuk_modules/govuk_template/assets'));
 app.use('/public', express.static(__dirname + '/govuk_modules/govuk_frontend_toolkit'));
 
-app.use(express.favicon(path.join(__dirname, 'govuk_modules', 'govuk_template', 'assets', 'images','favicon.ico'))); 
+app.use(express.favicon(path.join(__dirname, 'govuk_modules', 'govuk_template', 'assets', 'images','favicon.ico')));
 
 
 // send assetPath to all views
@@ -60,6 +61,21 @@ app.get(/^\/([^.]+)$/, function (req, res) {
 	});
 
 });
+
+
+// Set up the session
+
+var sess = {
+  secret: 'uZyJIxbeJRTDaNK3',
+  cookie: {},
+  unset: 'destroy'
+};
+
+if (app.get('env') === 'production') {
+  sess.cookie.secure = true; // serve secure cookies in prod
+}
+
+app.use(session(sess));
 
 // start the app
 
