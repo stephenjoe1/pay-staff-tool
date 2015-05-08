@@ -22,7 +22,7 @@
     "grunt-nodemon": "0.3.0",
     "grunt-sass": "0.16.1",
     "grunt-text-replace": "0.3.12",
-    "hogan.js": "3.0.2",
+    "hogan.js": "twitter/hogan.js",
     "merge": "^1.2.0",
     "minimist": "0.0.8",
     "node-sass": "1.2.3",

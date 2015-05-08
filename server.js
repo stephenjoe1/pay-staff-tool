@@ -4,8 +4,10 @@ var path = require('path'),
     merge = require('merge'),
     routes = require(__dirname + '/app/routes.js'),
     form_to_session = require(__dirname + '/lib/form_to_session.js'),
+    helpers = require(__dirname + '/lib/helpers'),
     app = express(),
-    port = (process.env.PORT || 3000),
+    port = (process.env.PORT || 3000)
+    Hogan = require('hogan.js')
 
 // Grab environment variables specified in Procfile or as Heroku config vars
     username = process.env.USERNAME,
@@ -36,6 +38,8 @@ app.use('/public', express.static(__dirname + '/govuk_modules/govuk_frontend_too
 
 app.use(express.favicon(path.join(__dirname, 'govuk_modules', 'govuk_template', 'assets', 'images','favicon.ico')));
 
+// Register view helpers.
+app.locals(helpers);
 
 // send assetPath to all views
 app.use(function (req, res, next) {
@@ -84,6 +88,12 @@ app.get(/^\/([^.]+)$/, function (req, res) {
 	});
 
 });
+
+app.post(/^\/([^.]+)$/, function (req, res) {
+	var path = (req.params[0]);
+  res.redirect(path);
+});
+
 
 // start the app
 
