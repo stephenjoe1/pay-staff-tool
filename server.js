@@ -2,6 +2,7 @@ var path = require('path'),
     express = require('express'),
     merge = require('merge'),
     routes = require(__dirname + '/app/routes.js'),
+    defaults = require(__dirname + '/app/defaults.js'),
     form_to_cookie = require(__dirname + '/lib/form_to_cookie.js'),
     helpers = require(__dirname + '/lib/helpers'),
     app = express(),
@@ -11,8 +12,7 @@ var path = require('path'),
 // Grab environment variables specified in Procfile or as Heroku config vars
     username = process.env.USERNAME,
     password = process.env.PASSWORD,
-    env = process.env.NODE_ENV || 'development',
-    defaults = {};
+    env = process.env.NODE_ENV || 'development';
 
 // Authenticate against the environment-provided credentials, if running
 // the app in production (Heroku, effectively)
@@ -55,10 +55,6 @@ app.use(form_to_cookie());
 // routes (found in app/routes.js)
 
 routes.bind(app);
-
-// DEFAULT values:
-defaults.amount = 2500;
-defaults.flow = "Volcano insurance";
 
 // auto render any view that exists
 
