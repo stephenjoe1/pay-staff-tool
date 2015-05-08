@@ -1,18 +1,22 @@
-function clear_session(req) {
-  console.log("Clearing the session.")
-  delete req.session
+function clear_cookie(req, res) {
+  console.log("Clearing all cookies.")
+  for (cookie in req.cookies) {
+    if (req.cookies.hasOwnProperty(cookie)) {
+      res.clearCookie(cookie);
+    }
+  }
 }
 
 module.exports = {
   bind : function (app) {
 
     app.get('/', function (req, res) {
-      clear_session(req);
+      clear_cookie(req, res);
       res.render('index');
     });
 
     app.get('/index', function (req, res) {
-      clear_session(req);
+      clear_cookie(req, res);
       res.render('index');
     });
 

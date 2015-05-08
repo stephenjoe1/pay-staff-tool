@@ -1,9 +1,8 @@
 var path = require('path'),
     express = require('express'),
-    session = require('express-session')
     merge = require('merge'),
     routes = require(__dirname + '/app/routes.js'),
-    form_to_session = require(__dirname + '/lib/form_to_session.js'),
+    form_to_cookie = require(__dirname + '/lib/form_to_cookie.js'),
     helpers = require(__dirname + '/lib/helpers'),
     app = express(),
     port = (process.env.PORT || 3000)
@@ -49,20 +48,9 @@ app.use(function (req, res, next) {
 
 app.use(express.urlencoded());
 
-// Set up the session
-
-var session_options = {
-  secret: 'uZyJIxbeJRTDaNK3',
-  cookie: {},
-  unset: 'destroy'
-};
-
-if (app.get('env') === 'production') {
-  sess.cookie.secure = true; // serve secure cookies in prod
-}
-
-app.use(session(session_options));
-app.use(form_to_session());
+// Set up the form cookie.
+app.use(express.cookieParser());
+app.use(form_to_cookie());
 
 // routes (found in app/routes.js)
 
@@ -77,8 +65,7 @@ defaults.flow = "Volcano insurance";
 app.get(/^\/([^.]+)$/, function (req, res) {
 
 	var path = (req.params[0]);
-
-	res.render(path, merge(true, defaults, req.session), function(err, html) {
+	res.render(path, merge(true, defaults, req.cookies), function(err, html) {
 		if (err) {
 			console.log(err);
 			res.send(404);
@@ -86,7 +73,6 @@ app.get(/^\/([^.]+)$/, function (req, res) {
 			res.end(html);
 		}
 	});
-
 });
 
 app.post(/^\/([^.]+)$/, function (req, res) {
