@@ -18,24 +18,25 @@
   		<p>We will use direct debit to take a one-off payment from your bank account. Please fill in your details below.</p>
   	</div>
 
+		<form class="form" method="POST" action="/direct-debit-payment-2">
 		  	<div class="form-group">
 				<label class="form-label-bold" for="name-on-account">
 			    Name on the account
 			  	</label>
-			  	<input class="form-control" id="account-number" type="text">
+			  	<input class="form-control" id="name-on-account" name="name-on-account" type="text">
 			 </div>
 
 			<div class="form-group">
 				<label class="form-label-bold" for="full-name">
 			    Sort code
 			  	</label>
-			  	<input class="form-control" id="sort-code" type="text">
+			  	<input class="form-control" id="sort-code" name="sort-code" type="text">
 			</div>
 			<div class="form-group">
 				<label class="form-label-bold" for="card-number">
 			    Account number
 			  	</label>
-			  	<input class="form-control" id="account-number" type="text">
+			  	<input class="form-control" id="account-number" name="account-number" type="text">
 			</div>
 
 	 	<fieldset class="inline">
@@ -112,10 +113,11 @@
 	<div class="grid-row">
 	    <div class="column-two-thirds">
 		<div class="form-group">
-	 			<a href="direct-debit-payment-2"><button class="button">Continue</button></a>
+	 			<button class="button">Continue</button>
 	 	</div>
 	 	</div>
 	 </div>
+</form>
 
 	<div class="grid-row">
 	    <div class="column-two-thirds">
