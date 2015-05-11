@@ -2,9 +2,9 @@ var path = require('path'),
     express = require('express'),
     merge = require('merge'),
     routes = require(__dirname + '/app/routes.js'),
+    presenters = require(__dirname + '/app/presenters.js')
     defaults = require(__dirname + '/app/defaults.js'),
     form_to_cookie = require(__dirname + '/lib/form_to_cookie.js'),
-    helpers = require(__dirname + '/lib/helpers'),
     app = express(),
     port = (process.env.PORT || 3000)
     Hogan = require('hogan.js')
@@ -37,9 +37,6 @@ app.use('/public', express.static(__dirname + '/govuk_modules/govuk_frontend_too
 
 app.use(express.favicon(path.join(__dirname, 'govuk_modules', 'govuk_template', 'assets', 'images','favicon.ico')));
 
-// Register view helpers.
-app.locals(helpers);
-
 // send assetPath to all views
 app.use(function (req, res, next) {
   res.locals({'assetPath': '/public/'});
@@ -50,7 +47,7 @@ app.use(express.urlencoded());
 
 // Set up the form cookie.
 app.use(express.cookieParser());
-app.use(form_to_cookie());
+app.use(form_to_cookie(presenters));
 
 // routes (found in app/routes.js)
 
