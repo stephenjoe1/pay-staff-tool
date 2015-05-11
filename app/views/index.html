@@ -13,13 +13,21 @@
 
 	<p>This is the index.html page - we recommend you put links to key pages here.</p>
 
-	<h2 class="heading-large">Pages</h2>
+	<h2 class="heading-large">Start payment...</h2>
 
-	<ul>
-		<li>
-			<a href="/examples">Example pages</a>
-		</li>
-	</ul>
+	<form action="/service-before" method="POST">
+		<div class="form-group">
+			<label class="block-label" for="radio-1"><input id="radio-1" type="radio" name="flow" value="Volcano insurance" checked="true"></input>Volcano insurance</label>
+			<label class="block-label" for="radio-2"><input id="radio-2" type="radio" name="flow" value="Earthquake insurance"></input>Earthquake insurance</label>
+			<label class="block-label" for="radio-3"><input id="radio-3" type="radio" name="flow" value="Tsunami insurance"></input>Tsunami insurance</label>
+		</div>
+		<label for="amount" class='form-label'>£<input type="number" id="amount" class="form-control" name="amount" step="0.01"></input></label>
+
+		<div class="form-group">
+			<button class="button">Pay now</button>
+		</div>
+	</form>
+
 
 	<h2 class="heading-large">Resources</h2>
 

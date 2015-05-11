@@ -1,8 +1,13 @@
 var path = require('path'),
     express = require('express'),
+    merge = require('merge'),
     routes = require(__dirname + '/app/routes.js'),
+    presenters = require(__dirname + '/app/presenters.js')
+    defaults = require(__dirname + '/app/defaults.js'),
+    form_to_cookie = require(__dirname + '/lib/form_to_cookie.js'),
     app = express(),
-    port = (process.env.PORT || 3000),
+    port = (process.env.PORT || 3000)
+    Hogan = require('hogan.js')
 
 // Grab environment variables specified in Procfile or as Heroku config vars
     username = process.env.USERNAME,
@@ -30,8 +35,7 @@ app.use('/public', express.static(__dirname + '/public'));
 app.use('/public', express.static(__dirname + '/govuk_modules/govuk_template/assets'));
 app.use('/public', express.static(__dirname + '/govuk_modules/govuk_frontend_toolkit'));
 
-app.use(express.favicon(path.join(__dirname, 'govuk_modules', 'govuk_template', 'assets', 'images','favicon.ico'))); 
-
+app.use(express.favicon(path.join(__dirname, 'govuk_modules', 'govuk_template', 'assets', 'images','favicon.ico')));
 
 // send assetPath to all views
 app.use(function (req, res, next) {
@@ -39,6 +43,11 @@ app.use(function (req, res, next) {
   next();
 });
 
+app.use(express.urlencoded());
+
+// Set up the form cookie.
+app.use(express.cookieParser());
+app.use(form_to_cookie(presenters));
 
 // routes (found in app/routes.js)
 
@@ -49,8 +58,7 @@ routes.bind(app);
 app.get(/^\/([^.]+)$/, function (req, res) {
 
 	var path = (req.params[0]);
-
-	res.render(path, function(err, html) {
+	res.render(path, merge(true, defaults, req.cookies), function(err, html) {
 		if (err) {
 			console.log(err);
 			res.send(404);
@@ -58,8 +66,13 @@ app.get(/^\/([^.]+)$/, function (req, res) {
 			res.end(html);
 		}
 	});
-
 });
+
+app.post(/^\/([^.]+)$/, function (req, res) {
+	var path = (req.params[0]);
+  res.redirect(path);
+});
+
 
 // start the app
 
