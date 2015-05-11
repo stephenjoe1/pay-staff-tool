@@ -202,7 +202,3 @@ h2.heading-paypoint {
     margin-right: 15px; }
  }
 
-@media only screen and (max-width: 480px) {
-  .sticky {
-    position: static; }
- }
