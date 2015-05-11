@@ -4,7 +4,7 @@ Before anything else there are a few things it's important to know.
 
 ## Technology
 
-This application is written in [NodeJS](http://nodejs.org/) in the [ExpressJS](http://expressjs.com/) framework. It also contains some additional code written in plain Node. 
+This application is written in [NodeJS](http://nodejs.org/) in the [ExpressJS](http://expressjs.com/) framework. It also contains some additional code written in plain Node.
 
 While you don't need to know either to create a prototype it's worth noting any code needs to be valid JavaScript. If you do write your own code you should also look to the documentation for Node and Express for guidance.
 
@@ -18,3 +18,4 @@ When building a prototype you'll be doing the following:
 ### Advanced
 
 3. [creating custom routes](./creating-routes)
+4. [referring back to user entered values](./interactivity)
