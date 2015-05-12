@@ -11,7 +11,7 @@
 }
 
 .paypoint-payment-summary {
-	border: 10px solid #DEE0E2;;
+	border: 10px solid #DEE0E2;
 	background-color: #FFFFFF;
 	padding: 30px;
 	margin-bottom: 30px;
@@ -25,12 +25,13 @@
 }
 
 .payment-summary {
-	border: 10px solid #DEE0E2;;
+	border: 10px solid #DEE0E2;
 	background-color: #F8F8F8;
 	padding: 30px;
 	margin-bottom: 30px;
 	margin-top: 30px;
 }
+
 
 .change-selection a {
 	color: #005EA5;
@@ -151,6 +152,12 @@ table td {
 	padding-top: 15px;
 }
 
+.print-download-section{
+	margin-top: 30px;
+}
+
+
+
 img.card-image {
 	max-height: 38px;
 	padding-top: 2px;
@@ -230,15 +237,45 @@ h2.heading-paypoint {
 
 // PayPal specific css
 
+.paypal-payment-summary {
+	padding-left: 15px;
+	padding-right: 30px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+
 .paypal {
-	margin-top: 100px;
+	margin-top: 15px;
 	color: gray;
 	font-family: Arial!important;
 	font-weight: 300;
+
 }
 
 .paypal-login {
-	background-color: #DEE0E2;
+	border: 1px solid #DEE0E2;
+	padding: 15px;
+}
+
+.paypal-paynow {
+	padding: 15px;
+}
+
+.paypal button {
+	background-color: #0079c1;
+}
+
+.paypal button:hover {
+	background-color: #0079c1;
+}
+
+.paypal-details button {
+	background-color: #0079c1;
+}
+
+.paypal-details button:hover {
+	background-color: #0079c1;
 }
 
 .paypal-form {
@@ -246,7 +283,7 @@ h2.heading-paypoint {
 }
 
 .paypal-login h2 {
-	margin-top: 30px;
+	margin-top: 10px;
 	margin-bottom: 0px;
 	font-size: 24px;
 	font-weight: 300;
@@ -257,6 +294,17 @@ h2.heading-paypoint {
 	font-size: 19px;
 	font-weight: 300;
 	font-family: helvetica neue, Arial;
+}
+
+.logo {
+	margin-top: 30px;
+	margin-left: 15px;
+	margin-bottom: 30px;
+}
+
+.paypal-details {
+	border: 1px solid #DEE0E2;
+	padding: 30px;
 }
 
 
@@ -284,6 +332,10 @@ h2.heading-paypoint {
 }
 
 @media only screen and (max-width : 480px) {
+
+.form-group button {
+	margin-top: 30px;
+}
 
 
 

@@ -1165,6 +1165,9 @@ table td {
   padding-right: 10px;
   padding-top: 15px; }
 
+.print-download-section {
+  margin-top: 30px; }
+
 img.card-image {
   max-height: 38px;
   padding-top: 2px;
@@ -1223,20 +1226,42 @@ h2.heading-paypoint {
   font-size: 24px;
   font-weight: bold; }
 
+.paypal-payment-summary {
+  padding-left: 15px;
+  padding-right: 30px;
+  margin-bottom: 10px;
+  margin-top: 10px; }
+
 .paypal {
-  margin-top: 100px;
+  margin-top: 15px;
   color: gray;
   font-family: Arial !important;
   font-weight: 300; }
 
 .paypal-login {
-  background-color: #DEE0E2; }
+  border: 1px solid #DEE0E2;
+  padding: 15px; }
+
+.paypal-paynow {
+  padding: 15px; }
+
+.paypal button {
+  background-color: #0079c1; }
+
+.paypal button:hover {
+  background-color: #0079c1; }
+
+.paypal-details button {
+  background-color: #0079c1; }
+
+.paypal-details button:hover {
+  background-color: #0079c1; }
 
 .paypal-form {
   margin-top: 30px; }
 
 .paypal-login h2 {
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 0px;
   font-size: 24px;
   font-weight: 300;
@@ -1246,6 +1271,15 @@ h2.heading-paypoint {
   font-size: 19px;
   font-weight: 300;
   font-family: helvetica neue, Arial; }
+
+.logo {
+  margin-top: 30px;
+  margin-left: 15px;
+  margin-bottom: 30px; }
+
+.paypal-details {
+  border: 1px solid #DEE0E2;
+  padding: 30px; }
 
 @media only screen and (max-width: 720px) {
   .sticky {
@@ -1257,3 +1291,7 @@ h2.heading-paypoint {
     margin-right: 15px; }
  }
 
+@media only screen and (max-width: 480px) {
+  .form-group button {
+    margin-top: 30px; }
+ }
