@@ -1,0 +1,48 @@
+{{<layout}}
+
+{{$pageTitle}}
+	Proceed to payment
+{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+	<div class="back">
+		<a href="#">&#9664; Back</a>
+	</div>
+
+	<h1 class="heading-xlarge">Proceed to payment</h1>
+
+		<div class="payment-summary">
+			<h2>Payment summary</h2>
+				<table>
+			    <thead>
+			      <!-- <tr>
+			        <th colspan="2">Your purchase details</th>
+			      </tr> -->
+			    </thead>
+			    <tbody>
+			      <tr>
+			        <td>Payment of:</td>
+			        <td>{{ flow }}</td>
+			      </tr>
+			      <tr>
+			        <td>Amount to pay:</td>
+			        <td> {{ amount }}</td>
+			      </tr>
+			    </tbody>
+			  </table>
+		</div>
+
+
+	 <div class="form-group">
+	 			<a href="choose-payment"><button class="button">Proceed to payment</button></a>
+	 </div>
+
+
+
+</main>
+
+{{/content}}
+
+{{/layout}}

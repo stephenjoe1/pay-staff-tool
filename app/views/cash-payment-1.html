@@ -14,7 +14,7 @@
 	<h1 class="heading-xlarge">Pay by cash via PayPoint</h1>
 
 		<div class="payment-summary">
-			<h2>Your purchase details</h2>
+			<h2>Payment summary</h2>
 				<table>
 			    <thead>
 			      <!-- <tr>
@@ -23,7 +23,7 @@
 			    </thead>
 			    <tbody>
 			      <tr>
-			        <td>Product:</td>
+			        <td>Payment of:</td>
 			        <td> {{ flow }} </td>
 			      </tr>
 			      <tr>
@@ -42,15 +42,20 @@
 	    <div class="column-two-thirds">
 	    <h2 class="heading-paypoint">How to use PayPoint</h2>
 			<div class="paypoint information">
-				<p> To pay via PayPoint you need to generate a barcode and bring it with you to a PayPoint location – this is anywhere you see the PayPoint sign.</p>
+				<p> To pay via PayPoint you need to generate a barcode and bring it with you to a PayPoint location – this is anywhere you see the PayPoint sign. The shopkeeper will then scan your barcode.</p>
 
-				<p>The PayPoint reseller will then scan your barcode. You can either print the barcode or save it to your smartphone once generated.
+				<p> You can either print the barcode or show it on your smartphone once generated.
 				</p>
 			</div>
 			<div class="form-group">
-				<label class="form-label-bold" for="email-address">Email address<span class="form-hint">We will use this to confirm the payment with you</span>
+				<label class="form-label-bold" for="email-address">Email address<span class="form-hint">We will use this to send you the bardcode and confirm the payment with you</span>
 			  	</label>
 			  	<input class="form-control" id="email-address" type="text">
+			</div>
+			<div class="form-group">
+				<label class="form-label-bold" for="phone-number">Phone number<span class="form-hint">We will send the barcode to this number</span>
+			  	</label>
+			  	<input class="form-control" id="phone-number" type="text">
 			</div>
 		</div>
 
