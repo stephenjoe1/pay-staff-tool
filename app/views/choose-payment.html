@@ -6,6 +6,14 @@
 
 {{$content}}
 
+<style type="text/css">
+{{#hide_debitcard}}		#label-debitcard { display: none; }		{{/hide_debitcard}}
+{{#hide_creditcard}}	#label-creditcard { display: none; }	{{/hide_creditcard}}
+{{#hide_paypal}}		#label-paypal { display: none; }		{{/hide_paypal}}
+{{#hide_cash}}			#label-cash { display: none; }			{{/hide_cash}}
+{{#hide_directdebit}}	#label-directdebit { display: none; }	{{/hide_directdebit}}
+</style>
+
 <main id="content" role="main">
 	<div class="back">
 		<a href="#">&#9664; Back</a>
@@ -16,22 +24,32 @@
 	  <h1 class="heading-xlarge">Choose payment method</h1>
 	  	<form class="radio-nav">
 			<div class="form-group">
-			<label class="block-label" for="radio-1">
-			    <input id="radio-1" type="radio" name="radio-group" value="card-payment">
-			    Credit or Debit card
+				
+			<label id="label-debitcard" class="block-label" for="radio-debitcard">
+			    <input id="radio-debitcard" type="radio" name="radio-group" value="card-payment">
+			    Debit card
 			</label>
-			<label class="block-label" for="radio-3">
-			    <input id="radio-3" type="radio" name="radio-group" value="direct-debit-payment-1">
+			
+			<label id="label-creditcard" class="block-label" for="radio-creditcard">
+			    <input id="radio-creditcard" type="radio" name="radio-group" value="card-payment">
+			    Credit card
+			</label>
+			
+			<label id="label-directdebit" class="block-label" for="radio-directdebit">
+			    <input id="radio-directdebit" type="radio" name="radio-group" value="direct-debit-payment-1">
 			    Direct debit
 		  	</label>
-		  	<label class="block-label" for="radio-4">
-			    <input id="radio-4" type="radio" name="radio-group" value="paypal-payment-1">
+			
+		  	<label id="label-paypal" class="block-label" for="radio-paypal">
+			    <input id="radio-paypal" type="radio" name="radio-group" value="paypal-payment-1">
 			    PayPal
 		  	</label>
-		  	<label class="block-label" for="radio-2">
-			    <input id="radio-2" type="radio" name="radio-group" value="cash-payment-1">
+			
+		  	<label id="label-cash" class="block-label" for="radio-cash">
+			    <input id="radio-cash" type="radio" name="radio-group" value="cash-payment-1">
 			    Cash (via PayPoint)
 			</label>
+			
 			<div class="form-group">
 		 		<button class="button">Continue</button>
 		 	</div>

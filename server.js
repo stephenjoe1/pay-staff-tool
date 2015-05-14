@@ -2,7 +2,8 @@ var path = require('path'),
     express = require('express'),
     merge = require('merge'),
     routes = require(__dirname + '/app/routes.js'),
-    presenters = require(__dirname + '/app/presenters.js')
+    presenters = require(__dirname + '/app/presenters.js'),
+    services = require(__dirname + '/app/services.js'),
     defaults = require(__dirname + '/app/defaults.js'),
     form_to_cookie = require(__dirname + '/lib/form_to_cookie.js'),
     app = express(),
@@ -48,6 +49,14 @@ app.use(express.urlencoded());
 // Set up the form cookie.
 app.use(express.cookieParser());
 app.use(form_to_cookie(presenters));
+app.use(services.filter);
+
+// landing point for services
+app.get('/landing', function (req, res) {
+	if (services.landing(presenters, req, res)) {
+		res.redirect('/service-before');
+	}
+});
 
 // routes (found in app/routes.js)
 
@@ -56,7 +65,6 @@ routes.bind(app);
 // auto render any view that exists
 
 app.get(/^\/([^.]+)$/, function (req, res) {
-
 	var path = (req.params[0]);
 	res.render(path, merge(true, defaults, req.cookies), function(err, html) {
 		if (err) {
@@ -70,7 +78,7 @@ app.get(/^\/([^.]+)$/, function (req, res) {
 
 app.post(/^\/([^.]+)$/, function (req, res) {
 	var path = (req.params[0]);
-  res.redirect(path);
+  	res.redirect(path);
 });
 
 
