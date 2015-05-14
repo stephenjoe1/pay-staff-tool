@@ -44,3 +44,9 @@ Find out how to work with the prototyping application.
 * [Tips and Tricks](docs/tips-and-tricks.md)
 
 This project is built on top of Express, the idea is that it is straightforward to create simple static pages out of the box. However, you're not limited to that - more dynamic sites can be built with more understanding of Express. Here's a good [Express tutorial.](http://code.tutsplus.com/tutorials/introduction-to-express--net-33367)
+
+## Integrating Other Prototypes
+
+1. Define a service under `app/services.js`. This includes which payment types should be available for this service, and its display name, etc.
+
+2. Land the service's own prototype at `https://username:password@payment-prototype.herokuapp.com/landing?service=name&amount=100&return_url=http://other.service.gov.uk`. This will begin a journey through the Payments Prototype and at the end, return you to the `return_url` you specify.
