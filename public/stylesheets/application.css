@@ -1049,6 +1049,14 @@ ul, ol {
   text-decoration: none;
   border-bottom: 1px solid #005EA5; }
 
+.back-button {
+  color: #005EA5;
+  background-color: white;
+  margin-top: 100px;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid #005EA5; }
+
 .paypoint-payment-summary {
   border: 10px solid #DEE0E2;
   background-color: #FFFFFF;
