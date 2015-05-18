@@ -1049,18 +1049,8 @@ ul, ol {
   text-decoration: none;
   border-bottom: 1px solid #005EA5; }
 
-.back-button {
-  color: #005EA5;
-  background-color: white;
-  margin-top: 100px;
-  font-weight: 700;
-  text-decoration: none;
-  border-bottom: 1px solid #005EA5; }
-
 .paypoint-payment-summary {
-  border: 10px solid #DEE0E2;
   background-color: #FFFFFF;
-  padding: 30px;
   margin-bottom: 30px;
   margin-top: 30px; }
 
@@ -1302,4 +1292,31 @@ h2.heading-paypoint {
 @media only screen and (max-width: 480px) {
   .form-group button {
     margin-top: 30px; }
+
+  .payment-summary {
+    padding: 15px;
+    margin-bottom: 30px;
+    margin-top: 30px; }
+
+  .payment-confirmed {
+    padding: 15px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    text-align: center; }
+
+  .payment-confirmed h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: 30px; }
+
+  .payment-confirmed p {
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px; }
+
+  .barcode img {
+    max-width: 300px; }
  }
