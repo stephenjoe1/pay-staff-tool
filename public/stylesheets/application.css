@@ -1218,12 +1218,17 @@ h2.heading-paypoint {
   font-size: bold;
   margin-bottom: 10px; }
 
+.check-details {
+  margin-bottom: 30px; }
+
 .check-details h2 {
-  font-size: 19px; }
+  font-size: 19px;
+  margin-top: 15px; }
 
 .check-details p {
   font-size: 24px;
-  font-weight: bold; }
+  font-weight: bold;
+  margin-bottom: 5px; }
 
 .paypal-payment-summary {
   padding-left: 15px;
