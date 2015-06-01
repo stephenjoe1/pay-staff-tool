@@ -1,0 +1,62 @@
+{{<layout}}
+
+{{$pageTitle}}
+	GOV.UK payment page
+{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">	
+	<div class="back">
+		<a href="javascript:history.back()">&#9664; Back</a>
+	</div>		
+	<div class="grid-row">
+	  <div class="column-two-thirds">
+	   <h1 class="heading-xlarge">Pay by cash via PayPoint</h1>
+	    <h2 class="heading-paypoint">Your barcode has been generated</h2>
+	    	<p>The barcode has been sent to the email address and phone number you gave on the previous page.
+			</p>
+	    <div class="barcode">
+				<img src="/public/images/barcode-paypoint.png">
+		</div>
+			<div class="print-download-section">
+
+				<ul class="print-download">
+				<li><a href="#"><img src="/public/images/print-icon.png">Print the barcode now</a></li>
+				<li><a href="#"><img src="/public/images/save-icon.png">Download PDF</a></li>
+				</ul>
+			</div>
+
+				<div class="paypoint information">
+					<p> Take this barcode to a PayPoint location to complete your transaction. You can find PayPoint locations on most high streets throughout the UK.
+					</p>
+					<img src="/public/images/paypoint-logo.png">
+
+					<p> <a href="https://www.paypoint.com/en-gb" rel="external">Find a PayPoint location
+					</a></p>	
+				</div>
+		</div>
+		
+		<div class="column-third">
+			<div class="payment-summary-small">
+				<h2>Payment summary</h2>
+
+			      <p class="payment-info"> Blue Badge Application </p>
+			       <h3>Amount to pay:</h3>
+			       <p class="payment-amount"> £10 </p>
+			</div>
+		</div>
+	</div>
+	<div class="grid-row">
+		<div class="column-two-thirds">
+			<div class="form-group">
+	 			<a href="https://www.gov.uk/"><button class="button">Finish and return to GOV.UK</button></a>
+	 		</div>
+	 	</div>
+	</div>
+
+</main>
+
+{{/content}}
+
+{{/layout}}
