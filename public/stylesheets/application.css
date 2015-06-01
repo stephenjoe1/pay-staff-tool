@@ -1127,6 +1127,9 @@ ul, ol {
   border-bottom-color: white;
   font-weight: 700; }
 
+.finish-and-return {
+  margin-top: 30px; }
+
 .payment-type-intro {
   max-width: 100%;
   color: #6F777B; }

@@ -19,6 +19,13 @@ services = {
 		'name' : 'Online Debt Service',
 		'hide_directdebit' : true,
 		'hide_paypal' : true
+	},
+
+	'blue-badge' : {
+		'flow' : 'Blue Badge Application',
+		'name' : 'Blue Badge Application',
+		'hide_directdebit' : true,
+		'hide_paypal' : true
 	}
 }
 
