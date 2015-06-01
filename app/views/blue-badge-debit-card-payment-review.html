@@ -1,0 +1,64 @@
+{{<layout}}
+
+{{$pageTitle}}
+	GOV.UK payment page
+{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+	<div class="back">
+		<a href="javascript:history.back()">&#9664; Back</a>
+	</div>
+<div class="grid-row">
+    <div class="column-two-thirds">
+	  <h1 class="heading-xlarge">Check your details are correct before confirming</h1>
+	  <div class="check-details">
+			<h2>Full name:<p>{{full-name}}</p>
+		 </div>
+	  	<div class="check-details">
+			<h2>Card number:</h2> <p>************8976</p>
+		</div>
+		<div class="check-details">
+			<h2>Expiration date:</h2> 
+			<p>{{exp-month}}/{{exp-year}}</p>
+		</div>
+
+		<div class="check-details">
+			<h2>Billing address:</h2> 
+			<p>{{building-and-street}}</p>
+			<p>{{town-or-city}}</p>
+			<p>{{postcode}}</p>
+		</div>
+		<div class="check-details">
+			<h2>Email address:</h2> 
+			<p>{{email-address}}</p>
+		</div>
+		<div class="check-details">
+			<h2>Payment of:</h2>
+			   <p class="payment-info"> Blue Badge Application </p>
+		</div>
+		<div class="check-details">
+			<h2>Amount to pay:</h2>
+			   <p class="payment-amount"> £10 </p>
+		</div>
+	</div>
+</div>
+
+	<div class="grid-row">
+		<div class="column-two-thirds">
+			<div class="form-group">
+		 			<a href="blue-badge-card-payment-confirmed"><button class="button">Confirm payment</button></a>
+		 		</div>
+		 		<div class="back">
+				<a href="#">Cancel</a>
+			</div>
+		 </div>
+	 </div>
+
+
+</main>
+
+{{/content}}
+
+{{/layout}}
