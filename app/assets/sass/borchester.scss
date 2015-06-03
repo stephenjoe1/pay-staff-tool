@@ -1,0 +1,178 @@
+body {
+  padding:0;
+  margin: 0;
+  font-family: helvetica, arial;
+}
+
+div.wrapper {
+  padding-top:1.2rem;
+}
+
+div.wrapper.fullscreen {
+  clear: both;
+  font-family: helvetica, arial;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+  padding-top: 20px;
+  width: 960px;
+}
+
+.header, .top-bar, .button, .button:hover, .top-bar.expanded .title-area {
+  background:#7a71ae;
+}
+
+.header {
+  margin: 0;
+  height: auto;
+}
+
+.top-bar {
+  padding: 30px;
+}
+
+.top-bar-section ul{
+  width: auto;
+  height: auto;
+  display: inline;
+  font-size: 16px;
+  line-height: 35px;
+  text-decoration: none;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.top-bar-section ul a{
+  text-decoration: none;
+  color: white;
+}
+
+.top-bar-section li{
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.name h1  {
+  display: block;
+  font-family: helvetica, arial;
+  font-weight: bold;
+  font-size: 36px;
+  color: white;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+.row {
+  clear: both;
+  margin-bottom: 100px;
+  padding-bottom: 30px;
+  height: auto;
+}
+
+.column-all {
+  width: 100%;
+  float: left;
+  clear: both;
+}
+
+.column-half {
+  width: 45%;
+  float: left;
+}
+
+.column-two-thirds {
+  width: 60%;
+  float: left;
+  margin-right: 30px;
+}
+
+.column-one-third {
+  width: 30%;
+  float: left;
+}
+
+img {
+  width:100%;
+  margin-bottom: 60px;
+}
+
+
+
+.services ul{
+  font-size: 24px;
+  line-height: 35px;
+  text-decoration: none;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.services ul a{
+  text-decoration: none;
+}
+
+.recent-notices ul{
+  font-size: 19px;
+  line-height: 30px;
+  text-decoration: none;
+  list-style-type: none;
+  padding-left: 0;
+}
+.recent-notices ul a{
+  text-decoration: none;
+}
+
+ul.small-block-grid-2.services {
+  text-align:center;
+}
+
+
+a, .side-nav li a:not(.button), .side-nav li a:not(.button):hover {
+  color: #7A71AE;
+}
+
+a:hover {
+  color:#3b3b7b;
+}
+
+
+h3 {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin-bottom: 15px;
+  font-size: 27px;
+  font-weight: bold;
+  line-height: 3px;
+}
+
+.button {
+  font-weight:bold;
+}
+
+.panel h4 {
+  line-height:1.5rem;
+  font-weight:bold;
+}
+
+#news {
+  padding:0;
+}
+
+#news h2 {
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 27px;
+  line-height: 30px;
+}
+
+#news p {
+  font-size: 19px;
+  line-height: 25px;
+}
+
+
+
+.footer {
+  height: 100px;
+  background-color: #eeeeee;
+  clear: both;
+}
