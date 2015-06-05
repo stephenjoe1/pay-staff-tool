@@ -63,37 +63,39 @@ div.wrapper.fullscreen {
 }
 
 .row {
+  position: relative;
   clear: both;
-  margin-bottom: 100px;
-  padding-bottom: 30px;
-  height: auto;
 }
 
 .column-all {
   width: 100%;
   float: left;
   clear: both;
+  margin-bottom: 15px;
 }
 
 .column-half {
   width: 45%;
   float: left;
+  margin-bottom: 15px;
 }
 
 .column-two-thirds {
   width: 60%;
   float: left;
   margin-right: 30px;
+  margin-bottom: 15px;
 }
 
 .column-one-third {
   width: 30%;
   float: left;
+  margin-bottom: 15px;
 }
 
 img {
   width:100%;
-  margin-bottom: 60px;
+  margin-bottom: 45px;
 }
 
 
@@ -104,6 +106,7 @@ img {
   text-decoration: none;
   list-style-type: none;
   padding-left: 0;
+  margin-top: 10px;
 }
 
 .services ul a{
@@ -130,18 +133,39 @@ a, .side-nav li a:not(.button), .side-nav li a:not(.button):hover {
   color: #7A71AE;
 }
 
+.button {
+  margin-top: 15px;
+  padding: 10px;
+  color: white;
+  font-size: 19px;
+  font-family: helvetica;
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+.button:hover {
+  background-color:#3b3b7b;
+}
+
 a:hover {
   color:#3b3b7b;
 }
 
 
 h3 {
-  padding-bottom: 15px;
-  padding-top: 15px;
+  margin-top: 15px;
   margin-bottom: 15px;
   font-size: 27px;
   font-weight: bold;
-  line-height: 3px;
+  line-height: 30px;
+}
+
+h2 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 40px;
 }
 
 .button {
@@ -172,7 +196,68 @@ h3 {
 
 
 .footer {
-  height: 100px;
+  position: relative;
+  margin-top: 100px;
+  height: 200px;
   background-color: #eeeeee;
   clear: both;
 }
+
+.form-group {
+  float: left;
+  width: 100%;
+  margin-top: 15px;
+  }
+
+.form-label-bold {
+  font-weight: 700;
+  font-size: 19px;
+  float:left;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.form-hint {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: gray;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  }
+
+.form-control {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.3157894737;
+  font-weight: 400;
+  text-transform: none;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 4px;
+  background-color: #fff;
+  border: 1px solid #bfc1c3;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+input {
+  margin: 0em;
+  font: normal normal normal 11px/normal 'Lucida Grande';
+  text-rendering: auto;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+}
+
+
+
+
