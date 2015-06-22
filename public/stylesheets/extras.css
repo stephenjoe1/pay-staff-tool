@@ -18,6 +18,14 @@
   font-weight: 700;
   padding-bottom: 15px; }
 
+.find-paypoint-location {
+  margin-top: 15px;
+  margin-bottom: 30px; }
+
+.paypoint-locater {
+  border: 1px solid #DEE0E2;
+  padding: 15px; }
+
 .payment-summary {
   border: 10px solid #DEE0E2;
   background-color: #F8F8F8;

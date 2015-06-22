@@ -14,23 +14,36 @@
 
   <div class="grid-row">
 	  <div class="column-two-thirds">
-	   <h1 class="heading-xlarge">Pay by cash via PayPoint</h1>
+	   <h1 class="heading-xlarge">Pay by cash using PayPoint</h1>
 	    <h2 class="heading-paypoint">How to use PayPoint</h2>
 			<div class="paypoint information">
-				<p> To pay via PayPoint you need to generate a barcode and bring it with you to a PayPoint location – this is anywhere you see the PayPoint sign.</p>
-				<img src="/public/images/paypoint-logo.png">
+				<p> You can pay by cash by visiting any store, newsagent or petrol station displaying the PayPoint sign. There are over 27,000 PayPoint outlets in the UK. </p>
+				<img src="/public/images/paypoint-logo.png">				
+				
+				<details class="find-paypoint-location">
+					<summary aria-controls="details-content-0" tabindex="0">
+					<span class="summary">Find your closest PayPoint location</span>
+					</summary>
+					<div class="paypoint-locater">
+						<div class="form-group">
+						<label class="form-label-bold" for="phone-number">Enter a postcode </label>
+			  			<input class="form-control" id="phone-number" type="text">
+						</div>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.7686531514387!2d-0.12501110000000812!3d51.5174602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b330a2fcfd5%3A0x2a0a09b013e71c06!2sLondon+WC1A+2SA!5e0!3m2!1sen!2suk!4v1434984647143" width="600" height="340" frameborder="0" style="border:0"></iframe>
+					</div>
+				</details>
 
 
-				<p> The shopkeeper will then scan your barcode. You can either print the barcode or show it on your smartphone once generated.
+				<p> You’ll need to bring a payment barcode with you for the shopkeeper to scan. You can print the barcode or choose to have it sent to your mobile phone or email address. 
 				</p>
 			</div>
 			<div class="form-group">
-				<label class="form-label-bold" for="email-address">Email address<span class="form-hint">We will use this to send you the bardcode and confirm the payment with you</span>
+				<label class="form-label-bold" for="email-address">Email address<span class="form-hint">Have the barcode sent to this email address</span>
 			  	</label>
 			  	<input class="form-control" id="email-address" type="text">
 			</div>
 			<div class="form-group">
-				<label class="form-label-bold" for="phone-number">Mobile phone number<span class="form-hint">We will send a link to the barcode to this number</span>
+				<label class="form-label-bold" for="phone-number">Mobile phone number<span class="form-hint">Have the barcode sent to this mobile phone number</span>
 			  	</label>
 			  	<input class="form-control" id="phone-number" type="text">
 			</div>
