@@ -8,6 +8,14 @@
   text-decoration: none;
   border-bottom: 1px solid #005EA5; }
 
+.section-number {
+  font-size: 24px;
+  color: #6f777b;
+  margin-top: 30px; }
+
+.service-before-title {
+  margin-top: 7px; }
+
 .paypoint-payment-summary {
   background-color: #FFFFFF;
   margin-bottom: 30px;
