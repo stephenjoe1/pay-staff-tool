@@ -1,0 +1,64 @@
+{{<layout}}
+
+{{$pageTitle}}
+	GOV.UK payment page
+{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+	<div class="back">
+		<a href="javascript:history.back()">&#9664; Back</a>
+	</div>
+<div class="grid-row">
+    <div class="column-two-thirds">
+	  <h1 class="heading-xlarge">Check your details are correct before confirming</h1>
+	  <div class="check-details">
+			<h2>Name on card:<p>{{full-name}}</p>
+		 </div>
+	  	<div class="check-details">
+			<h2>Card number:</h2> <p>************6256</p>
+		</div>
+		<div class="check-details">
+			<h2>Expiration date:</h2> 
+			<p>{{exp-month}}/{{exp-year}}</p>
+		</div>
+
+		<div class="check-details">
+			<h2>Billing address:</h2> 
+			<p>{{building-and-street}}</p>
+			<p>{{town-or-city}}</p>
+			<p>{{postcode}}</p>
+		</div>
+		<div class="check-details">
+			<h2>Email address:</h2> 
+			<p>{{email-address}}</p>
+		</div>
+		<div class="check-details">
+			<h2>Payment of:</h2>
+			   <p class="payment-info"> Parking permit renewal to Borchester City Council </p>
+		</div>
+		<div class="check-details">
+			<h2>Amount to pay:</h2>
+			   <p class="payment-amount"> £120.00 </p>
+		</div>
+	</div>
+</div>
+
+	<div class="grid-row">
+		<div class="column-two-thirds">
+			<div class="form-group">
+		 			<a href=" http://bbis-oix.azurewebsites.net/views/confirmation.html"><button class="button">Confirm payment</button></a>
+		 		</div>
+		 		<div class="back">
+				<a href="#">Cancel</a>
+			</div>
+		 </div>
+	 </div>
+
+
+</main>
+
+{{/content}}
+
+{{/layout}}
