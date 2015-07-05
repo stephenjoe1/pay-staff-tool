@@ -258,6 +258,29 @@ fieldset {
   border-radius: 0;
 }
 
+.block-label {
+  float: left;
+  position: relative;
+  background: #dee0e2;
+  border: 1px solid #dee0e2;
+  padding: 18px 30px 15px 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.radio-nav {
+  clear: both;
+}
+
+#label-1month {
+  margin-right: 10px;
+}
+
+#label-6months {
+  margin-right: 10px;
+}
+
 input {
   margin: 0em;
   font: normal normal normal 11px/normal 'Lucida Grande';
