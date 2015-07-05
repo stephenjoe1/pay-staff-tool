@@ -259,7 +259,8 @@ fieldset {
 }
 
 .block-label {
-  float: left;
+  float: none;
+  display: block;
   position: relative;
   background: #dee0e2;
   border: 1px solid #dee0e2;
@@ -273,13 +274,13 @@ fieldset {
   clear: both;
 }
 
-#label-1month {
-  margin-right: 10px;
-}
+// #label-1month {
+//   margin-right: 10px;
+// }
 
-#label-6months {
-  margin-right: 10px;
-}
+// #label-6months {
+//   margin-right: 10px;
+// }
 
 input {
   margin: 0em;
