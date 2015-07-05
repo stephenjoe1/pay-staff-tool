@@ -1,37 +1,39 @@
-{{<layout}}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/static/images/icon.png" />
 
-{{$pageTitle}}
-	Payment confirmed
-{{/pageTitle}}
+    <title>Welcome | Borchester City Council</title>
+    <!-- <link rel="stylesheet" href="/static/vendor/roboto-slab-fontface/roboto-slab-fontface.css">
+    <link rel="stylesheet" href="/static/vendor/foundation/css/foundation.css">
+    <link rel="stylesheet" href="/static/vendor/fontawesome/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="/public/stylesheets/borchester.css">
+    
 
-{{$content}}
+  </head>
+  <body>
 
-<main id="content" role="main">
+	<div class="wrapper fullscreen">
 
 		<div class="payment-confirmed">
-			<h1><img src="/public/images/tick-icon.png">Your payment was successful</h1>
+			<h1><img class="tick-icon" src="/public/images/tick-icon.png">Your parking permit has been renewed with Borchester City Council</h1>
 			 <h3>Reference number:</h3>
 			 <p>147836</p>
 		</div>
 
 		<div class="grid-row">
     		<div class="column-two-thirds">
-			<h2 class="heading-large">What happens next</h2>
-			<p>We will email you a receipt shortly.</p>
-			<table>
-			    <tbody>
-			      <tr>
-			        <td>Payment of:</td>
-			        <td>Parking permit renewal to Borchester City Council</td>
-			      </tr>
-			      <tr>
-			        <td>Amount paid:</td>
-			        <td>£120.00</td>
-			      </tr>
-			    </tbody>
-
-			  </table>
-		</div>
+			<h3>We will email you a receipt shortly.</h3>
+			<div class="confirmed-details">
+			        <h4>Payment of:</h4>
+			        <p>Parking permit renewal to Borchester City Council</p>
+			      <h4>Amount paid:</h4>
+			        <p>£120.00</p>
+		
+			</div>
+			</div>
 		</div>
 
 	<div class="finish-and-return">
@@ -39,9 +41,8 @@
 	 		<a href="borchester-home"><button class="button">Finish</button></a>
 	 	</div>
 	</div>
+	</div>
+	
+</body>
 
-</main>
-
-{{/content}}
-
-{{/layout}}
+</html>

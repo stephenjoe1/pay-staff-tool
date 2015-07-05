@@ -295,6 +295,62 @@ input {
   text-align: start;
 }
 
+.payment-confirmed {
+  background-color: #7a71ae;
+  color: white;
+  padding: 30px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.payment-confirmed h1 {
+  font-size: 36px;
+  line-height: 50px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.payment-confirmed p {
+  font-size: 36px;
+  font-weight: 700;
+  padding-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom:15px;
+}
+
+.payment-confirmed h3 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 19px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+
+.tick-icon{
+  width: 50px;
+  padding-right: 15px;
+  margin-bottom: 0;
+}
+
+.confirmed-details p{
+  font-size: 19px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.confirmed-details h4 {
+  font-size: 19px;
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+
+.finish-and-return{
+  margin-bottom: 100px;
+}
+
 
 
 
