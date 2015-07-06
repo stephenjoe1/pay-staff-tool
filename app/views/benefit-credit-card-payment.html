@@ -14,14 +14,11 @@
 	<div class="column-two-thirds">
 	<h1 class="heading-xlarge">Pay by Credit Card</h1>
 
-  		<h2 class="heading-large">Card information</h2>
-
-<form class="form" method="POST" action="/benefit-credit-card-payment-review">
+	<form class="form" method="POST" action="/benefit-credit-card-payment-review">
 
 		<div class="form-group">
 			<label class="form-label-bold" for="full-name">
-		    Full name
-		    <span class="form-hint">As it appears on card</span>
+		    Name on card
 		  	</label>
 		  	<input class="form-control" id="full-name" name="full-name" type="text">
 		</div>
@@ -32,15 +29,8 @@
 		  	<input class="form-control" id="card-number" type="text">
 		</div>
 		<div class="form-group">
-			<label class="form-label-bold" for="card-security-number">
-		    Card security code
-		    <span class="form-hint">3 digits at the back of the card</span>
-		  	</label>
-		  	<input class="form-control" id="security-number" type="number" pattern="[0-9]*" min="0" max="999"><img class="card-image" src="/public/images/card-security-code-2.png">
-		</div>
-	 	<div class="form-group">
       		<fieldset>
-        		<legend class="form-label-bold">Expiration date</legend>
+        		<legend class="form-label-bold">Expiry date</legend>
         		<div class="form-date">
 		          <p class="form-hint">For example, 07/17</p>
 		          <div class="form-group form-group-month">
@@ -54,13 +44,23 @@
         		</div>
        		</fieldset>
       	</div>
+      	<div class="form-group">
+			<label class="form-label-bold" for="card-security-number">
+		    Card security code
+		    <span class="form-hint">This is the 3 digit code at the back of your card</span>
+		  	</label>
+		  	<input class="form-control" id="security-number" type="number" pattern="[0-9]*" min="0" max="999"><img class="card-image" src="/public/images/card-security-code-2.png">
+		</div>
 
       <div class="form-group">
-      <h2 class="heading-large">Billing address</h2>
+      <h2 class="heading-medium">Billing address</h2>
+      <div class="payment-type-intro">
+  		<p>This is where your statements are sent</p>
+  		</div>
       	<fieldset>
 			<div class="form-group">
 				<label class="form-label-bold" for="building-and-street">
-			    Building and street
+			    Building name/number and street
 			  	</label>
 			  	<input class="form-control" id="building-and-street" name="building-and-street" type="text">
 			  	<input class="form-control" id="building-and-street" name="building-and-street" type="text">
@@ -85,7 +85,7 @@
 			  	<input class="form-control" id="postcode" name="postcode" type="text">
 			</div>
 			<div class="form-group">
-				<label class="form-label-bold" for="email-address">Email address<span class="form-hint">We need this to confirm the payment with you</span>
+				<label class="form-label-bold" for="email-address">Email address<span class="form-hint">We'll send your payment confirmation here</span>
 			  	</label>
 			  	<input class="form-control" id="email-address" name="email-address" type="text">
 			</div>
