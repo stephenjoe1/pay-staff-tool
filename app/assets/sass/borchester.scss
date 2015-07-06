@@ -6,6 +6,7 @@ body {
 
 div.wrapper {
   padding-top:1.2rem;
+
 }
 
 div.wrapper.fullscreen {
@@ -200,6 +201,13 @@ h2 {
   margin-top: 100px;
   height: 200px;
   background-color: #eeeeee;
+  clear: both;
+}
+.footer-white {
+  position: relative;
+  margin-top: 100px;
+  height: 200px;
+  background-color: white;
   clear: both;
 }
 
