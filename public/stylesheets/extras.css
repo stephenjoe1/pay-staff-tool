@@ -109,6 +109,9 @@
   max-width: 100%;
   color: #6F777B; }
 
+.intro {
+  font-weight: 700; }
+
 #security-number {
   width: 100px; }
 
@@ -127,8 +130,7 @@ table td {
   width: 100px; }
 
 .barcode {
-  padding-top: 10px;
-  padding-bottom: 10px; }
+  padding-bottom: 30px; }
 
 .barcode img {
   padding: 30px;
@@ -145,6 +147,12 @@ table td {
   margin-top: 10px;
   margin-bottom: 30px; }
 
+.print-download li {
+  font-weight: 700; }
+
+.print-download li a {
+  text-decoration: none; }
+
 img.card-image {
   max-height: 38px;
   padding-top: 2px;
@@ -153,6 +161,39 @@ img.card-image {
 
 .form-group button {
   margin-top: 10px; }
+
+.form-group-send button {
+  margin-top: 0px; }
+
+.form-group-send {
+  margin-bottom: 0px;
+  margin-top: 15px; }
+
+.button-grey {
+  background-color: #6F777B;
+  position: relative;
+  display: -moz-inline-stack;
+  display: inline-block;
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-box-shadow: 0 2px 0 #0B0C0C;
+  -moz-box-shadow: 0 2px 0 #0B0C0C;
+  box-shadow: 0 2px 0 #0B0C0C;
+  font-size: 1em;
+  line-height: 1.25;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  color: #fff;
+  margin: -15px 15px 15px 0;
+  padding: 0.36em 0.78947em 0.2em 0.78947em;
+  vertical-align: top; }
+
+.button-grey:hover {
+  background-color: #BFC1C3; }
 
 .DD-terms-conditions {
   max-width: 66%;
