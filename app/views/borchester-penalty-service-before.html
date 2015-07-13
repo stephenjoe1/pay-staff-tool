@@ -1,16 +1,41 @@
-{{<layout}}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/static/images/icon.png" />
 
-{{$pageTitle}}
-	Proceed to payment
-{{/pageTitle}}
+    <title>Welcome | Borchester City Council</title>
+    <!-- <link rel="stylesheet" href="/static/vendor/roboto-slab-fontface/roboto-slab-fontface.css">
+    <link rel="stylesheet" href="/static/vendor/foundation/css/foundation.css">
+    <link rel="stylesheet" href="/static/vendor/fontawesome/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="/public/stylesheets/borchester.css">
+    
 
-{{$content}}
+  </head>
+  <body>
+    <div class="header">
+      <nav class="top-bar">
+          <div class="name">
+            <h1> Borchester City Council </h1>
+          </div>
+        <section class="top-bar-section">
+          <ul>
+            <li><a href="#">Services</a></li>
+            <li><a href="/notices">Notices</a></li>
+            <li><a href="#">Votes and debates</a></li>
+            <li><a href="#">Your councillors</a></li>
+            <li><a href="#">Buses and trams</a></li>
+            <li><a href="#">Data</a></li>
+          </ul>
+        </section>
+      </nav>
+    </div>
 
-<main id="content" role="main">
+<div class="wrapper fullscreen">
 <div class="back">
 		<a href="javascript:history.back()">&#9664; Back</a>
 	</div>
-	<h1 class="heading-xlarge">Proceed to payment</h1>
 
 		<div class="payment-summary">
 			<h2>Payment summary</h2>
@@ -27,7 +52,7 @@
 			      </tr>
 			      <tr>
 			        <td>Date of this notice:</td>
-			        <td>03/07/15</td>
+			        <td>10/07/15</td>
 			      </tr>
 			      <tr>
 			        <td>Amount to pay:</td>
@@ -41,11 +66,14 @@
 	 <div class="form-group">
 	 			<a href="borchester-penalty-choose-payment"><button class="button">Proceed to payment</button></a>
 	 </div>
+</div>
 
 
 
-</main>
 
-{{/content}}
+<div class="footer">
+        
+      </div>
+</body>
 
-{{/layout}}
+</html>

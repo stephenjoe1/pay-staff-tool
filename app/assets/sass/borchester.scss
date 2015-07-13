@@ -53,6 +53,23 @@ div.wrapper.fullscreen {
   margin-right: 15px;
 }
 
+.payment-summary {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.payment-summary h2 {
+  font-size: 36px;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+.payment-summary td {
+  font-size: 19px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+}
+
+
 .name h1  {
   display: block;
   font-family: helvetica, arial;
@@ -142,6 +159,7 @@ a, .side-nav li a:not(.button), .side-nav li a:not(.button):hover {
   font-family: helvetica;
   border: none;
   border-bottom: 2px solid black;
+  margin-bottom: 60px;
 }
 
 .button:hover {
@@ -305,7 +323,7 @@ input {
 }
 
 .payment-confirmed {
-  background-color: #7a71ae;
+  background-color: #28A197;
   color: white;
   padding: 30px;
   margin-bottom: 10px;
