@@ -23,4 +23,11 @@ $(document).ready(function() {
 	$(window).scroll(function() {
 	    stickyNav();
 	});
+
+	$('#card-number').keypress(function() {
+		if(this.value.length >= 2) {
+			$('#visa-image').removeClass("visa-hidden")
+		}
+	});
 });
+

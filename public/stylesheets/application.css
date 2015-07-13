@@ -1057,6 +1057,9 @@ ul, ol {
 .service-before-title {
   margin-top: 7px; }
 
+.visa-hidden {
+  visibility: hidden; }
+
 .paypoint-payment-summary {
   background-color: #FFFFFF;
   margin-bottom: 30px;
