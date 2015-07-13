@@ -1057,6 +1057,10 @@ ul, ol {
 .service-before-title {
   margin-top: 7px; }
 
+#visa-image {
+  margin-bottom: -10px;
+  max-width: 80px; }
+
 .visa-hidden {
   visibility: hidden; }
 
