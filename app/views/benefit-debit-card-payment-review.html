@@ -14,33 +14,39 @@
     <div class="column-two-thirds">
 	  <h1 class="heading-xlarge">Check your details are correct before confirming</h1>
 	  <div class="check-details">
-			<h2>Full name:<p>{{full-name}}</p>
-		 </div>
-	  	<div class="check-details">
-			<h2>Card number:</h2> <p>************8976</p>
-		</div>
-		<div class="check-details">
-			<h2>Expiration date:</h2> 
-			<p>{{exp-month}}/{{exp-year}}</p>
-		</div>
 
-		<div class="check-details">
-			<h2>Billing address:</h2> 
-			<p>{{building-and-street}}</p>
-			<p>{{town-or-city}}</p>
-			<p>{{postcode}}</p>
-		</div>
-		<div class="check-details">
-			<h2>Email address:</h2> 
-			<p>{{email-address}}</p>
-		</div>
-		<div class="check-details">
-			<h2>Payment of:</h2>
-			   <p class="payment-info"> Payment to DWP </p>
-		</div>
-		<div class="check-details">
-			<h2>Amount to pay:</h2>
-			   <p class="payment-amount"> £200 </p>
+	  	<table>
+		    <tbody>
+		      <tr>
+		        <td>Name on card:</td>
+		        <td class="table-info">{{full-name}}</td>
+		      </tr>
+		      <tr>
+		        <td>Card number:</td>
+		        <td class="table-info">************6256</td>
+		      </tr>
+		      <tr>
+		       <td>Expiry date:</td>
+		        <td class="table-info">{{exp-month}}/{{exp-year}}</td>
+		      </tr>
+		      <tr>
+		        <td>Billing address:</td>
+		        <td class="table-info">{{building-and-street}} {{town-or-city}}, {{postcode}}</td>
+		      </tr>
+		       <tr>
+		        <td>Email address:</td>
+		        <td class="table-info">{{email-address}}</td>
+		      </tr>
+		      <tr>
+		        <td>Payment of:</td>
+		        <td class="table-info">Benefit debt repayment to DWP</td>
+		      </tr>
+		      <tr>
+		        <td>Amount to pay:</td>
+		        <td class="table-info">£187.00</td>
+		      </tr>
+		    </tbody>
+  		</table>	
 		</div>
 	</div>
 </div>
@@ -48,7 +54,7 @@
 	<div class="grid-row">
 		<div class="column-two-thirds">
 			<div class="form-group">
-		 			<a href="benefit-card-payment-confirmed"><button class="button">Confirm payment</button></a>
+		 			<a href=" benefit-card-payment-confirmed "><button class="button">Confirm payment</button></a>
 		 		</div>
 		 		<div class="back">
 				<a href="#">Cancel</a>
