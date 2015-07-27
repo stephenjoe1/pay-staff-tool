@@ -1,0 +1,69 @@
+{{<layout}}
+
+{{$pageTitle}}
+	GOV.UK payment page
+{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+<div class="back">
+		<a href="javascript:history.back()">&#9664; Back</a>
+	</div>
+
+
+<div class="grid-row">
+    <div class="column-two-thirds">
+	  <h1 class="heading-xlarge">Check your details are correct before confirming</h1>
+	  <div class="check-details">
+			<h2>Name on the account:</h2> <p>{{name-on-account}}</p>
+		 </div>
+	  	<div class="check-details">
+			<h2>Sort code:</h2> <p>{{sort-code}}</p>
+		</div>
+		<div class="check-details">
+			<h2>Account number:</h2> <p>{{account-number}}</p>
+		</div>
+
+	</div>
+
+
+	<div class="column-third">
+
+			<div class="payment-summary-small">
+				<h2>Payment summary</h2>
+
+			      <p class="payment-info">Benefit debt repayment to DWP</p>
+			       <h3>Amount to pay:</h3>
+			       <p class="payment-amount">£187.00</p>
+			</div>
+	</div>
+	</div>
+
+	<div class="grid-row">
+	<div class="column-two-thirds">
+		<div class="form-group">
+	 			<a href="benefit-direct-debit-confirmed"><button class="button">Confirm payment</button></a>
+	 		</div>
+	 		<div class="back">
+				<a href="#">Cancel</a>
+			</div>
+	 </div>
+	 </div>
+
+	<div class="grid-row">
+	    <div class="column-two-thirds">
+	    <div class="DD-terms-conditions">
+		 <div class="dd-images"><img src="/public/images/gocardless.png"><img src="/public/images/directdebit.png"></div>
+			 <p>Your payments are protected by the <a>Direct Debit guarantee</a>.</p>
+			<p>GoCardless Ltd, 338-346 Goswell Road, London, EC1V 7LQ.</p>
+			<p>E-mail: help@gocardless.com / Tel: 020 7183 8674</p>
+		 </div>
+		</div>
+	 </div>
+
+</main>
+
+{{/content}}
+
+{{/layout}}
