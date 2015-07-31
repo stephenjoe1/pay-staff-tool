@@ -26,6 +26,9 @@
 .table-info {
   font-weight: 700; }
 
+table td {
+  border-bottom: none; }
+
 .paypoint-payment-summary {
   background-color: #FFFFFF;
   margin-bottom: 30px;
