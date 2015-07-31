@@ -27,6 +27,11 @@ services = {
 		'hide_directdebit' : true,
 		'hide_paypal' : true
 	}
+
+	'benefit-debt' : {
+		'flow' : 'Benefit debt repayment',
+		'name' : 'Benefit debt repayment',
+	}
 }
 
 
