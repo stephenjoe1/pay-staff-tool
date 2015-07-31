@@ -28,7 +28,7 @@ services = {
 		'hide_paypal' : true
 	}
 
-	'benefit-debt' : {
+	'benefit' : {
 		'flow' : 'Benefit debt repayment',
 		'name' : 'Benefit debt repayment',
 	}
