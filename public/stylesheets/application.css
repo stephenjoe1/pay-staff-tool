@@ -479,6 +479,30 @@ pre, code {
         width: auto;
         vertical-align: baseline; } }
 
+.alpha-tag {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 8px 0 0;
+  padding: 2px 5px 0;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 700;
+  text-transform: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #d53880; }
+  @media (min-width: 641px) {
+    .alpha-tag {
+      vertical-align: baseline; } }
+  @media (max-width: 640px) {
+    .alpha-tag {
+      font-size: 14px;
+      line-height: 1.1428571429; } }
+
 .column-quarter {
   padding: 0 15px;
   -webkit-box-sizing: border-box;

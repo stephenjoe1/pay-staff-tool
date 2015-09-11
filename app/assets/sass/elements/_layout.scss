@@ -21,6 +21,10 @@
   @include phase-banner(alpha);
 }
 
+.alpha-tag {
+  @include phase-tag(alpha); // Change this to (beta) for a beta tag
+}
+
 
 // Grid layout
 // ==========================================================================
