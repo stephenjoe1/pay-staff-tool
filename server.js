@@ -77,8 +77,7 @@ app.get(/^\/([^.]+)$/, function (req, res) {
 });
 
 app.post(/^\/([^.]+)$/, function (req, res) {
-	var path = (req.params[0]);
-  	res.redirect(path);
+  res.redirect(req.originalUrl);
 });
 
 
