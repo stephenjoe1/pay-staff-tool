@@ -1,4 +1,3 @@
-
 <html>
   <head>
     <meta charset="utf-8">
@@ -34,37 +33,43 @@
     </div>
 
 <div class="wrapper fullscreen">
-  <div class="row">
-    <div class="column-half">
-      <h2>Pay your council tax</h2>
-        <div class="column-full">
-        <div class="form-group">
-          <label class="form-label-bold" for="full-name">
-            Account reference number
-            <span class="form-hint">This number can be found on the letter you received</span>
-            </label>
-            <input class="form-control" id="full-name" name="full-name" type="text">
-        </div>
-        <div class="form-group">
-            <label class="form-label-bold" for="card-number">
-              Amount to pay
-              </label><span class="poundsign">£</span>
-              <input class="form-control" id="amount" type="text">
-          </div>
-        <div class="row">
-          <div class="column-half">
-            <div class="form-group">
-                <a href="borchester-council-tax-service-before"><button class="button">Continue</button></a>
-              </div>
-           </div>
-        </div>
-        </div>
-    </div>
+<div class="back">
+		<a href="javascript:history.back()">&#9664; Back</a>
+	</div>
+
+		<div class="payment-summary">
+			<h2>Payment summary</h2>
+				<table>
+			    <thead>
+			      <!-- <tr>
+			        <th colspan="2">Your purchase details</th>
+			      </tr> -->
+			    </thead>
+			    <tbody>
+			      <tr>
+			        <td>Payment of:</td>
+			        <td>Council tax to Borchester City Council</td>
+			      </tr>
+			      <tr>
+			        <td>Amount to pay:</td>
+			        <td>£121.00</td>
+			      </tr>
+			    </tbody>
+			  </table>
+		</div>
+
+
+	 <div class="form-group">
+	 			<a href="borchester-council-tax-choose-payment"><button class="button">Proceed to payment</button></a>
+	 </div>
 </div>
-</div>
+
+
+
+
 <div class="footer">
         
-</div>
+      </div>
 </body>
 
 </html>
