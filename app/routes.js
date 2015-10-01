@@ -34,7 +34,7 @@ module.exports = {
 
       var nextUrl;
       var authFailure = true;
-      if ( newReviewCount == 0) {
+      if ( newReviewCount == 1) {
         authFailure = false;
         nextUrl = '/borchester-permit-debit-card-payment?error=' + newReviewCount
       } else if ( newReviewCount <= 3) {
