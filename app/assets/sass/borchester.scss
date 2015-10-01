@@ -257,10 +257,11 @@ fieldset {
 .form-label-bold {
   font-weight: 700;
   font-size: 19px;
-  float:left;
+  // float:left;
   margin-top: 15px;
   margin-bottom: 10px;
   padding-left: 0;
+  display: block;
 }
 
 .form-hint {
@@ -300,6 +301,10 @@ fieldset {
   margin-top: 10px;
   margin-bottom: 10px;
   cursor: pointer;
+}
+
+.poundsign {
+  display: inline-block;
 }
 
 .logo-paypoint {
