@@ -17,17 +17,6 @@
             <form class="form" method="POST" action="/borchester-council-tax-debit-card-payment-review">
 
 
-                <div class="form-group {{#error-full-name}}error{{/error-full-name}}">
-                    <label class="form-label-bold" for="full-name">
-                        Name on card
-
-                        {{#error-full-name}}
-                        <span class="error-message">Please enter your full name</span>
-                        {{/error-full-name}}
-
-                    </label>
-                    <input class="form-control" id="full-name" name="full-name" type="text" value="{{full-name}}">
-                </div>
                 <div class="form-group {{#error-card-number}}error{{/error-card-number}}">
                     <label class="form-label-bold" for="card-number">
                         Card number
@@ -63,6 +52,19 @@
                         </div>
                     </fieldset>
                 </div>
+
+                <div class="form-group {{#error-full-name}}error{{/error-full-name}}">
+                    <label class="form-label-bold" for="full-name">
+                        Name on card
+
+                        {{#error-full-name}}
+                        <span class="error-message">Please enter your full name</span>
+                        {{/error-full-name}}
+
+                    </label>
+                    <input class="form-control" id="full-name" name="full-name" type="text" value="{{full-name}}">
+                </div>
+
                 <div class="form-group {{#error-csc}}error{{/error-csc}}">
                     <label class="form-label-bold" for="security-number">
                         Card security code
@@ -90,7 +92,7 @@
                     <fieldset>
                         <div class="form-group">
                             <label class="form-label-bold" for="building-and-street-1">
-                                Building name/number and street
+                                Building and street
                             </label>
                             <input class="form-control" id="building-and-street-1" name="building-and-street-1" type="text" value="{{building-and-street-1}}">
                             <input class="form-control" id="building-and-street-2" name="building-and-street-2" type="text" value="{{building-and-street-2}}">
