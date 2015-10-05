@@ -1,0 +1,86 @@
+{{<layout}}
+
+{{$pageTitle}}
+	GOV.UK payment page
+{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">	
+	<div class="back">
+		<a href="javascript:history.back()">&#9664; Back</a>
+	</div>		
+	<div class="grid-row">
+	  <div class="column-two-thirds">
+	   <h1 class="heading-xlarge">Take this barcode to a PayPoint store</h1>
+	   <details class="find-paypoint-location">
+					<summary aria-controls="details-content-0" tabindex="0">
+					<span class="summary"> Find your nearest PayPoint store </span>
+					</summary>
+					<div class="paypoint-locater">
+						<div class="form-group">
+						<label class="form-label-bold" for="phone-number">Enter a postcode </label>
+			  			<input class="form-control" id="phone-number" type="text" placeholder="WC1A 2SA">
+						</div>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.7686531514387!2d-0.12501110000000812!3d51.5174602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b330a2fcfd5%3A0x2a0a09b013e71c06!2sLondon+WC1A+2SA!5e0!3m2!1sen!2suk!4v1434984647143" width="600" height="340" frameborder="0" style="border:0"></iframe>
+					</div>
+				</details>
+	   <p>You'll get a receipt from the shopkeeper when you pay.</p>
+	    <div class="barcode">
+				<img src="/public/images/barcode-paypoint.png">
+		</div>
+		<div class="paypoint information">
+		<h2 class="heading-paypoint"> Send me this barcode </h2>
+<!-- <h2 class="heading-paypoint">Get your barcode</h2>-->			
+ 			<p>We can send you a link to this barcode by email or text message. We'll also send you a confirmation when you've paid.</p>
+			<p>We won't spam you or use your contact details for anything else.</p>
+		</div>
+			<fieldset>
+			<div class="form-group-send">
+				<label class="form-label-bold" for="email-address">Email address
+			  	</label>
+			  	<input class="form-control" id="email-address" type="text">
+			  	<a href="borchester-penalty-cash-payment-2-sentemail"><button class="button-grey">Send</button></a>
+			</div>
+			<div class="form-group-send">
+				<label class="form-label-bold" for="phone-number">Mobile phone number
+			  	</label>
+			  	<input class="form-control" id="phone-number" type="text">
+			  	<a href="borchester-penalty-cash-payment-2-sentsms"><button class="button-grey">Send</button></a>
+			</div>
+			</fieldset>
+
+				<div class="print-download-section">
+
+					<ul class="print-download">
+					<li><a href="#"><img src="/public/images/print-icon.png">Print this barcode now</a></li>
+					<li><a href="#"><img src="/public/images/save-icon.png">Download the barcode (PDF)</a></li>
+					</ul>
+				</div>
+		</div>
+		
+		<div class="column-third">
+			<div class="payment-summary-small">
+				<h2>Payment summary</h2>
+
+			      <p class="payment-info"> Parking penalty charge notice to Borchester City Council </p>
+			       <h3>Amount to pay:</h3>
+			       <p class="payment-amount"> £80.00 </p>
+			</div>
+		</div>
+	</div>
+	<div class="grid-row">
+		<div class="column-two-thirds">
+			<div class="finish-and-return">
+				<div class="form-group">
+	 			<a href="borchester-home"><button class="button">Finish</button></a>
+	 			</div>
+			</div>
+	 	</div>
+	</div>
+
+</main>
+
+{{/content}}
+
+{{/layout}}

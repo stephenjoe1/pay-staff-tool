@@ -631,7 +631,7 @@ fieldset {
   box-sizing: border-box;
   padding: 4px;
   background-color: #fff;
-  border: 1px solid #bfc1c3;
+  border: 2px solid #bfc1c3;
   -webkit-appearance: none;
   border-radius: 0; }
   @media (max-width: 640px) {
