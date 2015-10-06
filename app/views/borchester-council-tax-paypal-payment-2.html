@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="robots" content="noindex">
+
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.paypalobjects.com/webstatic/icon/pp144.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.paypalobjects.com/webstatic/icon/pp114.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://www.paypalobjects.com/webstatic/icon/pp72.png">
+	<link rel="apple-touch-icon-precomposed" href="https://www.paypalobjects.com/webstatic/icon/pp64.png">
+	<link rel="shortcut icon" sizes="196x196" href="https://www.paypalobjects.com/webstatic/icon/pp196.png">
+	<link rel="shortcut icon" type="image/x-icon" href="https://www.paypalobjects.com/webstatic/icon/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://www.paypalobjects.com/webstatic/icon/pp32.png">
+	<link rel="apple-touch-icon" href="https://www.paypalobjects.com/en_US/i/pui/apple-touch-icon.png">
+
+	<link rel="stylesheet" id="stylesheet" href="https://www.paypalobjects.com/web/res/420/038bb9d9edde8b4e0bdfc5e1664f1/css/app.css" media="all">
+
+	<title>PayPal Checkout</title>
+</head>
+
+<body>
+	<div class="outerWrapper GB en" id="outerWrapper">
+		<header>
+			<div id="header" class="merchantHeader clearfix">
+				<div class="headerWrapper">
+					<img alt="Gov.UK" class="ng-scope" src="/public/images/govuk-logo.png">
+				</div>
+			</div>
+		</header>
+
+		<div id="wrapper">
+			<div id="main">
+				<div class="row-fluid paypalHeaderWrapper" content="xospartaweb">
+					<div class="span14 clearfix paypalHeader">
+						<div id="paypalLogo" class="logo ng-scope"><span class="accessAid ng-binding">PayPal Checkout</span></div>	
+					</div>
+				</div>
+
+				<div id="contents">
+					<div class="ng-scope"><section class="review" content="xospartaweb" id="memberReview">
+						<h1 class="alpha ng-binding">
+							Review your payment: Council Tax
+						</h1>
+
+						<div class="row-fluid justMember">
+							<div class="span14 trayInner reviewSections">
+								<p class="userEmail ng-binding" id="reviewUserInfo">
+									Welcome back, {{paypal-username}}! <a track-link="login_with_diff_user" href="" class="ng-binding">Not you?</a>
+								</p>
+
+								<div class="reviews">
+									<div class="trayInner trayInnerDefault">
+										<div id="shippingAddress">
+											<h4 class="noBottom gamma ng-binding">Amount</h4>
+											<div class="addressDisplay">
+												<div>
+													<span class="given-name ng-binding">£121.00</span>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+										
+								<div class="reviews">
+									<div class="trayInner trayInnerDefault">
+										<div id="paymentMethod">
+											<div class="">
+												<h4 class="noBottom paymentsHeader zeta">Pay with</h4>
+												<ul class="charges">
+													<li class="clearfix fs ng-scope">
+														<div class="method BALANCE INSTANT_TRANSFER">
+															<span class="fsIcons"></span>
+																PayPal Balance
+														</div>
+													</li>		
+												</ul>
+											</div>
+
+											<p class="authUserNotify disclaimer ng-binding ng-scope">
+												If money is added to your PayPal balance before this transaction is processed, the additional balance may be used to complete your payment. <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-8JR82881V4873933S#" class="authUserLink ng-binding">Learn more</a>
+											</p>	
+										</div>
+									</div>
+								</div>
+            	
+								<form name="confirm" class="proceed ng-pristine ng-valid" novalidate="novalidate" id="ryiForm" method="GET" action="/borchester-council-tax-card-payment-confirmed">
+									<div id="button" class="buttons">
+										<input track-submit="" type="submit" value="Pay Now" id="confirmButtonTop" class="btn full confirmButton continueButton">
+									</div>
+								</form>
+							</div>
+
+							<div class="span10 ng-scope ng-isolate-scope" feature="propValue">
+								<div class="props review">
+									<div class="prop-img"></div>
+									<h2 class="vprop-header ng-binding">PayPal is the safer, easier way to pay</h2>
+									<p ng-bind-html="text" class="ng-binding">No matter where you shop, we help keep your financial information secure.</p>
+								</div>
+							</div>	
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<footer content="xospartaweb">
+		<div class="footer clearfix commonFooter" role="contentinfo">
+			<p id="defaultCancelLink" class="cancelUrl">
+				<a track-link="cancel_and_return_to_merchant" href="https://payment-prototype.herokuapp.com/borchester-permit-choose-payment" role="button" id="cancelLink" class="ng-binding">
+					Cancel and return to gov.uk
+				</a>
+			</p>
+
+			<div class="footerWrapper">
+				<ul class="footerLinks">
+					<li class="first ng-scope" bind-html-compile="htmlContent(link.content)" id="footer_policy"><a href="https://www.paypal.com/uk/cgi-bin/webscr?cmd=xpt/cps/popup/FundingMixEducation-outside" xo-popup="" class="popup ng-scope" target="_blank">Policies</a></li>	<li class="first ng-scope" bind-html-compile="htmlContent(link.content)" id="footer_terms"><a href="https://www.paypal.com/uk/webapps/mpp/ua/legalhub-full" xo-popup="" class="popup ng-scope" target="_blank">Terms</a></li>	<li class="first ng-scope" bind-html-compile="htmlContent(link.content)" id="footer_privacy"><a href="https://www.paypal.com/uk/webapps/mpp/ua/privacy-full" xo-popup="" class="popup ng-scope" target="_blank">Privacy</a></li>	
+					<li class="feedback last">
+						<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-8JR82881V4873933S#" id="footer_sfLink" class="ng-binding ng-scope">Feedback</a>	
+					</li>
+				</ul>
+				<p class="copyright ng-binding">© 1999-2015 <span class="secureIcon"></span></p>
+			</div>
+		</div>
+	</footer>
+	
+</div>
+</body></html>
