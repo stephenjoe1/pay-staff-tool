@@ -1092,6 +1092,10 @@ ul, ol {
   text-decoration: none;
   border-bottom: 1px solid #005EA5; }
 
+.heading-large {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
 .section-number {
   font-size: 24px;
   color: #6f777b;
