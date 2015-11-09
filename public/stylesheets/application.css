@@ -1082,6 +1082,12 @@ ul, ol {
   border: 0;
   background: #fff; }
 
+.form-control {
+  width: 66%; }
+
+.medium-width {
+  width: 50%; }
+
 .back {
   margin-top: 30px; }
 
