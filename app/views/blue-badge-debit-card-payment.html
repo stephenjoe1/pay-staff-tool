@@ -17,25 +17,14 @@
 	<form class="form" method="POST" action="/blue-badge-debit-card-payment-review">
 
 		<div class="form-group">
-			<label class="form-label-bold" for="full-name">
-		    Name on card
-		  	</label>
-		  	<input class="form-control" id="full-name" name="full-name" type="text">
-		</div>
-		<div class="form-group">
+
 			<label class="form-label-bold" for="card-number">
 		    Card number
 		  	</label>
-		  	<input class="form-control" id="card-number" type="text">
+		  	<input class="form-control medium-width" id="card-number" type="text">
+		  	<img class="visa-image visa-hidden" id="visa-image" src="/public/images/visa-logo.png">
 		</div>
 		<div class="form-group">
-			<label class="form-label-bold" for="card-security-number">
-		    Card security code
-		    <span class="form-hint">This is the 3 digit code at the back of your card</span>
-		  	</label>
-		  	<input class="form-control" id="security-number" type="number" pattern="[0-9]*" min="0" max="999"><img class="card-image" src="/public/images/card-security-code-2.png">
-		</div>
-	 	<div class="form-group">
       		<fieldset>
         		<legend class="form-label-bold">Expiry date</legend>
         		<div class="form-date">
@@ -51,6 +40,13 @@
         		</div>
        		</fieldset>
       	</div>
+		<div class="form-group">
+			<label class="form-label-bold" for="card-security-number">
+		    Card security code
+		    <span class="form-hint">This is the 3 digit code at the back of your card</span>
+		  	</label>
+		  	<input class="form-control" id="security-number" type="number" pattern="[0-9]*" min="0" max="999"><img class="card-image" src="/public/images/card-security-code-2.png">
+		</div>
 
       <div class="form-group">
       <h2 class="heading-medium">Billing address</h2>

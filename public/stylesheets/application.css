@@ -1429,6 +1429,10 @@ h2.heading-paypoint {
   border: 1px solid #DEE0E2;
   padding: 30px; }
 
+.lede-link {
+  font-size: 24px;
+  margin-bottom: 10px; }
+
 @media only screen and (max-width: 720px) {
   .sticky {
     position: static; }
