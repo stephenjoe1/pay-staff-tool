@@ -1,3 +1,74 @@
+#global-header-bar {
+	max-width: 1340px;
+}
+
+#global-header .header-wrapper {
+	max-width: 1310px;
+}
+
+
+
+#content {
+	max-width: 1280px;
+}
+
+.overview {
+	margin-bottom: 30px;
+}
+
+
+.column-three-quarters {
+	@include grid-column( 3/4 );
+}
+
+.underline {
+	border-bottom: 5px solid black;
+}
+
+.staff-subheading {
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+.left-nav {
+	font-size: 16px;
+	font-weight: 700;
+	margin-top: 30px;
+}
+
+.left-nav li {
+	border-bottom: 1px solid #BFC1C3;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+tbody {
+	font-size: 14px;
+}
+
+tr.clickable-row { 
+	cursor: pointer;
+}
+
+tr.clickable-row:hover { 
+	background-color: #F8F8F8; 
+}
+
+.view-all {
+	font-size: 19px;
+	font-weight: 700;
+	padding-left: 30px;
+}
+
+
+
+
+
+
+
+
+
+
 .form-control {
 	width: 66%;
 }
@@ -47,9 +118,9 @@
 	font-weight: 700;
 }
 
-table td {
-	border-bottom: none;
-}
+// table td {
+// 	border-bottom: none;
+// }
 
 .paypoint-payment-summary {
 	background-color: #FFFFFF;
@@ -177,7 +248,7 @@ table td {
 }
 
 table td {
-	font-size: 19px;
+	font-size: 16px;
 	font-weight: 300;
 }
 
@@ -431,6 +502,7 @@ h2.heading-paypoint {
 	margin-top: 30px;
 	margin-left: 15px;
 	margin-bottom: 30px;
+	font-size: 19px;
 }
 
 .paypal-details {
