@@ -60,6 +60,48 @@ tr.clickable-row:hover {
 	padding-left: 30px;
 }
 
+.form-label-bold .form-hint {
+	font-size: 16px;
+}
+
+.form-hint {
+	font-size: 16px;
+}
+
+.form-date .form-group {
+	width: 90px;
+}
+
+.form-control {
+	font-size: 16px;
+}
+
+.filter-fields {
+	padding-left: 0;
+}
+
+::-webkit-input-placeholder {
+   font-size: 16px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   font-size: 16px;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   font-size: 16px;  
+}
+
+:-ms-input-placeholder {  
+   font-size: 16px;  
+}
+
+.filter-button {
+	margin-top: 60px;
+	margin-left: 30px;
+}
+
+
 
 
 
