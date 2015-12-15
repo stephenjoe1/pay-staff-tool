@@ -1,0 +1,173 @@
+{{<layout}}
+
+{{$pageTitle}}
+	GOV.UK payment page
+{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+	<div class="grid-row">
+		<div class="column-quarter">
+			<div class="left-nav">
+				<ul>
+			      	<li><a href="/staff-dashboard">Dashboard</a></li>
+			      	<li>All transactions</li>
+				</ul>
+			</div>	
+	    </div>
+	    <div class="column-three-quarters">
+	      <h1 class="heading-large underline">Transactions</h1>
+	      	<div class="overview">
+	      		<h2 class="heading-medium staff-subheading">
+    				Filter transactions list
+  				</h2>
+			 </div>
+			 <div class="column-quarter filter-fields">
+			 	<div class="form-group">
+					<label class="form-label-bold" for="full-name">
+				    	Ref. number
+				    	<span class="form-hint">Enter full or partial number</span>
+				  	</label>
+				  	<input class="form-control" id="full-name" name="full-name" type="text">
+				</div>
+			 </div>
+			 <div class="column-quarter filter-fields">
+			 	<div class="form-group">
+					<label class="form-label-bold" for="full-name">
+				    	Status
+				    	<span class="form-hint">Select an option</span>
+				  	</label>
+				  	<div class="dropdown">
+					  	<select name="select" class="form-control" id="full-name">
+						  	<option value="value1" selected>All</option>
+							<option value="value1">Paid</option> 
+							<option value="value2">Full refund</option>
+							<option value="value3">Partial refund</option>
+							<option value="value4">Captured</option>
+							<option value="value5">Auth refused</option>
+							<option value="value6">Capture expired</option>
+							<option value="value7">User cancelled</option>
+							<option value="value8">System cancelled</option>
+						</select>
+					</div>
+				</div>
+			 </div>
+			 <div class="column-quarter filter-fields">
+			 	<div class="form-group">
+					<legend class="form-label-bold">Date range</legend>
+	        		<div class="form-date">
+			          <p class="form-hint">E.g. 7/11/2015 to 10/11/2015</p>
+				        <div class="form-group">
+		            		<input class="form-control" placeholder="From" id="full-name" name="full-name" type="text">
+				        </div>
+		        		<div class="form-group">
+		            		<input class="form-control" placeholder="To" id="full-name" name="full-name" type="text">
+				        </div>
+	        		</div>
+				</div>
+			 </div>
+			 <div class="column-quarter filter-fields">
+			 	<div class="form-group filter-button">
+	 					<button class="button">Filter</button>
+				</div>
+			 </div>
+
+			<div class="column-three-quarters filter-fields">
+		      	<h2 class="heading-small">
+	    			12 transactions from 23/9/2015 – 30/9/2015 with 'full refund' status
+	  			</h2>
+	  			<p><a href="transaction-list">Download transactions</a></p>
+  			</div>
+
+		      	<table>
+				    <thead>
+				      <tr>
+				        <th scope="col">Ref. number</th>
+				        <th scope="col">Amount</th>
+				        <th scope="col">Status</th>
+				        <th scope="col">Time</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				      <tr class='clickable-row' data-href='url://'>
+				        <td>DV789045</td>
+				        <td>£96.00</td>
+				        <td>Full refund</td>
+				        <td>30/9/2015 – 10:38</td>
+				      </tr>
+				      <tr class='clickable-row' data-href='url://'>
+				        <td>DV786290</td>
+				        <td>£55.00</td>
+				        <td>Full refund</td>
+				        <td>30/9/2015 – 12:44</td>
+				      </tr>
+				      <tr class='clickable-row' data-href='url://'>
+				       <td>DV798657</td>
+				        <td>£38.00</td>
+				        <td>Full refund</td>
+				        <td>29/9/2015 – 10:49</td>
+				      </tr>
+				      <tr class='clickable-row' data-href='url://'>
+				       <td>DV798687</td>
+				        <td>£89.00</td>
+				        <td>Full refund</td>
+				        <td>29/9/2015 – 11:42</td>
+				      </tr>
+				      <tr class='clickable-row' data-href='url://'>
+				       <td>DV798227</td>
+				        <td>£38.00</td>
+				        <td>Full refund</td>
+				        <td>29/9/2015 – 12:41</td>
+				      </tr>
+				      <tr class='clickable-row' data-href='url://'>
+				       <td>DV799654</td>
+				        <td>£58.00</td>
+				        <td>Full refund</td>
+				        <td>28/9/2015 – 12:41</td>
+				      </tr>
+				      <tr class='clickable-row' data-href='url://'>
+				       <td>DV798644</td>
+				        <td>£32.00</td>
+				        <td>Full refund</td>
+				        <td>28/9/2015 – 12:40</td>
+				      </tr>
+				      <tr class='clickable-row' data-href='url://'>
+				       <td>DV798690</td>
+				        <td>£44.00</td>
+				        <td>Full refund</td>
+				        <td>28/9/2015 – 12:42</td>
+				      </tr>
+				      <tr class='clickable-row' data-href='url://'>
+				       <td>DV792537</td>
+				        <td>£38.00</td>
+				        <td>Full refund</td>
+				        <td>28/9/2015 – 12:39</td>
+				      </tr>
+				      <tr class='clickable-row' data-href='url://'>
+				       <td>DV798144</td>
+				        <td>£120.00</td>
+				        <td>Full refund</td>
+				        <td>28/9/2015 – 09:34</td>
+				      </tr>
+				      <tr class='clickable-row' data-href='url://'>
+				       <td>DV798120</td>
+				        <td>£120.00</td>
+				        <td>Full refund</td>
+				        <td>27/9/2015 – 11:03</td>
+				      </tr>
+				      <tr class='clickable-row' data-href='url://'>
+				       <td>DV798139</td>
+				        <td>£120.00</td>
+				        <td>Full refund</td>
+				        <td>27/9/2015 – 12:34</td>
+				      </tr>
+				    </tbody>
+  				</table>
+	</div>
+</div>
+</main>
+
+{{/content}}
+
+{{/layout}}
