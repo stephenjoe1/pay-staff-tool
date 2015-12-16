@@ -1,3 +1,94 @@
+#global-header-bar {
+  max-width: 1340px; }
+
+#global-header .header-wrapper {
+  max-width: 1310px; }
+
+#content {
+  max-width: 1280px; }
+
+.overview {
+  margin-bottom: 30px; }
+
+.underline {
+  border-bottom: 5px solid black; }
+
+.staff-subheading {
+  margin-top: 15px;
+  margin-bottom: 5px; }
+
+.left-nav {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 30px; }
+
+.left-nav li {
+  border-bottom: 1px solid #BFC1C3;
+  padding-bottom: 15px;
+  padding-top: 15px; }
+
+tbody {
+  font-size: 14px; }
+
+tr.clickable-row {
+  cursor: pointer; }
+
+tr.clickable-row:hover {
+  background-color: #F8F8F8; }
+
+.view-all {
+  font-size: 19px;
+  font-weight: 700;
+  padding-left: 30px; }
+
+.form-label-bold .form-hint {
+  font-size: 16px; }
+
+.form-hint {
+  font-size: 16px; }
+
+.form-date .form-group {
+  width: 105px;
+  margin-right: 5px; }
+
+.form-control {
+  font-size: 16px; }
+
+.filter-fields {
+  padding-left: 0; }
+
+::-webkit-input-placeholder {
+  font-size: 16px; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  font-size: 16px; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  font-size: 16px; }
+
+:-ms-input-placeholder {
+  font-size: 16px; }
+
+.filter-button {
+  margin-top: 40px;
+  margin-left: 30px; }
+
+.light-logo {
+  font-weight: 300; }
+
+.form-control {
+  width: 90% !important; }
+
+.dropdown-list {
+  background-image: url('/public/images/arrow.png');
+  background-repeat: no-repeat;
+  background-position: 97% 50%;
+  background-position-x: 97%;
+  background-position-y: 50%;
+  background-color: #F8F8F8; }
+
 .form-control {
   width: 66%; }
 
@@ -35,9 +126,6 @@
 
 .table-info {
   font-weight: 700; }
-
-table td {
-  border-bottom: none; }
 
 .paypoint-payment-summary {
   background-color: #FFFFFF;
@@ -142,7 +230,7 @@ table td {
   width: 100px; }
 
 table td {
-  font-size: 19px;
+  font-size: 16px;
   font-weight: 300; }
 
 .form-label-bold {
@@ -339,7 +427,8 @@ h2.heading-paypoint {
 .logo {
   margin-top: 30px;
   margin-left: 15px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  font-size: 19px; }
 
 .paypal-details {
   border: 1px solid #DEE0E2;

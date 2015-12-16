@@ -69,7 +69,8 @@ tr.clickable-row:hover {
 }
 
 .form-date .form-group {
-	width: 90px;
+	width: 105px;
+	margin-right: 5px;
 }
 
 .form-control {
@@ -105,8 +106,18 @@ tr.clickable-row:hover {
 	font-weight: 300;
 }
 
+.form-control {
+    width: 90%!important;
+}
 
-
+.dropdown-list {
+    background-image: url('/public/images/arrow.png');
+    background-repeat: no-repeat;
+    background-position: 97% 50%;
+    background-position-x: 97%;
+    background-position-y: 50%;
+    background-color: #F8F8F8;
+}
 
 
 
