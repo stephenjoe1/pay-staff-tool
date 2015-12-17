@@ -12,13 +12,16 @@
 			<div class="left-nav">
 				<ul>
 			      	<li><a href="/staff-dashboard">Dashboard</a></li>
-			      	<li>All transactions</li>
+			      	<li><a href="/staff-transaction-list">Transactions</a></li>
 				</ul>
 			</div>	
 	    </div>
 	    <div class="column-three-quarters">
 	      <h1 class="heading-large underline">Transactions</h1>
 	      	<div class="overview">
+	      	<div class="back">
+				<a href="javascript:history.back()">&#9664; Back</a>
+			</div>
 	      		<h2 class="heading-medium staff-subheading">
     				Transaction detail
   				</h2>
@@ -62,6 +65,57 @@
 					</tr>
 				</tbody>
 			</table>
+
+			<h2 class="heading-medium">Events</h2>
+
+			<table>
+		      	<tbody>
+			     	<tr>
+			      		<td>£10.00 was refunded from a £99.00 charge</td> 
+			      		<td>20 July 2015 11:15:32</td>
+			      	</tr>
+			      	<tr>
+						<td>A charge for £99.00 was captured</td>
+						<td>18 July 2015 18:12:38</td>
+					</tr>
+					<tr>
+						<td>An uncaptured charge for £99.00 was created</td> 
+						<td>18 July 2015 18:12:34</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h2 class="heading-medium">Logs</h2>
+
+			<table>
+		      	<tbody>
+			     	<tr>
+			      		<td>200</td> 
+			      		<td>POST/v1/charges/ch_16786t9823rjhjf9q9797rihkjhsoivh/refunds</td>
+			      		<td>20 July 2015 11:15:32</td>
+			      	</tr>
+			      	<tr>
+						<td>200</td>
+						<td>POST/v1/charges/ch_16786t9823rjhjf9q9797rihkjhsoivh/refunds</td>
+						<td>18 July 2015 18:12:38</td>
+					</tr>
+					<tr>
+						<td>200</td> 
+						<td>POST/v1/charges/</td>
+						<td>18 July 2015 18:12:34</td>
+					</tr>
+					<tr>
+						<td>200</td> 
+						<td>POST/v1/ctokens</td>
+						<td>18 July 2015 18:12:34</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		 <div class="column-quarter filter-fields">
+			 	<div class="form-group">
+	 					<button class="red-button">Refund payment</button>
+				</div>
 		</div>
 	</div>
 </div>
