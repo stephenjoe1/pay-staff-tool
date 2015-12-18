@@ -6,19 +6,19 @@ $(function(){
 });
 
 $(document).ready(function() {
-	var stickyNavTop = $('.payment-summary-small').offset().top;
+	// var stickyNavTop = $('.payment-summary-small').offset().top;
 	 
-	var stickyNav = function(){
-	var scrollTop = $(window).scrollTop();
+	// var stickyNav = function(){
+	// var scrollTop = $(window).scrollTop();
 	      
-	if (scrollTop > stickyNavTop) { 
-	    $('.payment-summary-small').addClass('sticky');
-	} else {
-	    $('.payment-summary-small').removeClass('sticky'); 
-	}
-	};
+	// if (scrollTop > stickyNavTop) { 
+	//     $('.payment-summary-small').addClass('sticky');
+	// } else {
+	//     $('.payment-summary-small').removeClass('sticky'); 
+	// }
+	// };
 	 
-	stickyNav();
+	// stickyNav();
 	 
 	$(window).scroll(function() {
 	    stickyNav();
@@ -29,11 +29,13 @@ $(document).ready(function() {
 			$('#visa-image').removeClass("visa-hidden")
 		}
 	});
+
+	$(".clickable-row").on('click', navigateTo);
 });
 
-jQuery(document).ready(function($) {
-    $(".clickable-row").click(function() {
-        window.document.location = $(this).data("href");
-    });
-});
+function navigateTo(evt) {
+	window.document.location = $(this).data("href");
+}
+
+
 
