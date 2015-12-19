@@ -1,0 +1,121 @@
+{{<layout}}
+
+{{$pageTitle}}
+	GOV.UK payment page
+{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+	<div class="grid-row">
+		<div class="column-quarter">
+			<div class="left-nav">
+				<ul>
+			      	<li><a href="/staff-dashboard">Dashboard</a></li>
+			      	<li><a href="/staff-transaction-list">Transactions</a></li>
+				</ul>
+			</div>	
+	    </div>
+	    <div class="column-three-quarters">
+	      <h1 class="heading-large underline">Transactions</h1>
+	      	<div class="overview">
+	      	<div class="back">
+				<a href="javascript:history.back()">&#9664; Back</a>
+			</div>
+	      		<h2 class="heading-medium staff-subheading">
+    				Transaction detail
+  				</h2>
+			 </div>
+
+			<div class="column-three-quarters filter-fields">
+
+		    <table>
+		      	<tbody>
+			      	<tr>
+			      		<td>Reference Number:</td> 
+			      		<td>DV789045</td>
+			      	</tr>
+			      	<tr>
+						<td>Amount:</td>
+						<td>£96.00</td>
+					</tr>
+					<tr>
+						<td>Status:</td> 
+						<td>Full refund given</td>
+					</tr>
+					<tr>
+						<td>Method:</td>
+						 <td>Debit card</td>
+					</tr>
+					<tr>
+						<td>Provider:</td>
+						<td>Barclays</td>
+					</tr>
+					<tr>
+						<td>Time:</td>
+						<td>24/09/15 — 16:35:23</td>
+					</tr>
+					<tr>
+						<td>Transaction ID:</td>
+						 <td>20150602153345</td>
+					</tr>
+					<tr>
+						<td>Payment ID:</td> 
+						<td>42250259</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h2 class="heading-medium">Events</h2>
+
+			<table>
+		      	<tbody>
+			     	<tr>
+			      		<td>£96.00 was refunded from a £96.00 charge</td> 
+			      		<td>30 Sep 2015 10:38:32</td>
+			      	</tr>
+			      	<tr>
+						<td>A charge for £96.00 was captured</td>
+						<td>18 Sep 2015 18:12:38</td>
+					</tr>
+					<tr>
+						<td>An uncaptured charge for £96.00 was created</td> 
+						<td>18 Sep 2015 18:12:34</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h2 class="heading-medium">Logs</h2>
+
+			<table>
+		      	<tbody>
+			     	<tr>
+			      		<td>200</td> 
+			      		<td>POST/v1/charges/ch_16786t9823rjhjf9q9797rihkjhsoivh/refunds</td>
+			      		<td>30 Sep 2015 11:15:32</td>
+			      	</tr>
+			      	<tr>
+						<td>200</td>
+						<td>POST/v1/charges/ch_16786t9823rjhjf9q9797rihkjhsoivh/refunds</td>
+						<td>18 Sep 2015 18:12:38</td>
+					</tr>
+					<tr>
+						<td>200</td> 
+						<td>POST/v1/charges/</td>
+						<td>18 Sep 2015 18:12:34</td>
+					</tr>
+					<tr>
+						<td>200</td> 
+						<td>POST/v1/ctokens</td>
+						<td>18 Sep 2015 18:12:34</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+</main>
+
+{{/content}}
+
+{{/layout}}
