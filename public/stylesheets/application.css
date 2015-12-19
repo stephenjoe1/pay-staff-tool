@@ -2169,7 +2169,11 @@ tr.clickable-row:hover {
 
 .filter-button {
   margin-top: 40px;
-  margin-left: 30px; }
+  margin-left: 10px; }
+
+.clear {
+  font-size: 16px;
+  text-decoration: none; }
 
 .light-logo {
   font-weight: 300; }
@@ -2212,9 +2216,9 @@ tr.clickable-row:hover {
 .back a {
   color: #005EA5;
   margin-top: 100px;
+  font-size: 16px;
   font-weight: 700;
-  text-decoration: none;
-  border-bottom: 1px solid #005EA5; }
+  text-decoration: none; }
 
 .heading-large {
   margin-top: 30px;
