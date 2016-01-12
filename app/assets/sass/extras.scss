@@ -143,6 +143,35 @@ tr.clickable-row:hover {
 	background-color: #B10E1E;
 }
 
+.dashboard-section {
+	background-color: white;
+}
+
+.dashboard-section h2 {
+	font-size: 24px;
+	font-weight: 700;
+	margin-top: 30px;
+}
+
+.dashboard-section table {
+	font-size: 24px;
+	font-weight: 700;
+	margin-top: 30px;
+}
+
+// .bold-xlarge {
+// 	float: left;
+// }
+
+table {
+	margin-top: 30px;
+}
+
+
+.no-left-padding {
+	padding-left: 0;
+	clear: both;
+}
 
 
 
@@ -336,6 +365,10 @@ tr.clickable-row:hover {
 table td {
 	font-size: 16px;
 	font-weight: 300;
+}
+
+.big-type-table td {
+	font-size: 24px;
 }
 
 .form-label-bold {

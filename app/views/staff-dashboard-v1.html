@@ -1,0 +1,112 @@
+{{<layout}}
+
+{{$pageTitle}}
+	GOV.UK payment page
+{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+	<div class="grid-row">
+		<div class="column-quarter">
+			<div class="left-nav">
+				<ul>
+			      	<li><a href="/staff-dashboard">Dashboard</a></li>
+			      	<li><a href="/staff-transaction-list">Transactions</a></li>
+				</ul>
+			</div>	
+	    </div>
+	    <div class="column-three-quarters">
+	      <h1 class="heading-large underline">Dashboard</h1>
+	      	<div class="overview">
+	      		<h2 class="heading-medium staff-subheading">
+    				Today’s overview
+  				</h2>
+			 	<!-- <img class="" src="/public/images/dropdown.png"> -->
+			 </div>
+
+	      	<img class="" src="/public/images/dashboard-boxes.png">
+
+	      	<h2 class="heading-medium">
+    			Latest 10 transactions <span class="view-all"><a href="staff-transaction-list">View all</a></span>
+  			</h2>
+
+		      	<table>
+				    <thead>
+				      <tr>
+				        <th scope="col">Ref. number</th>
+				        <th scope="col">Amount</th>
+				        <th scope="col">Status</th>
+				        <th scope="col">Time</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				      <tr class='clickable-row' data-href='http://pay-staff-tool.herokuapp.com/staff-transaction-detail'>
+				        <td>DV722045</td>
+				        <td>£116.00</td>
+				        <td>Paid</td>
+				        <td>6 Dec 2015 – 12:45</td>
+				      </tr>
+				      <tr class='clickable-row' data-href='http://pay-staff-tool.herokuapp.com/staff-transaction-detail'>
+				        <td>DV786290</td>
+				        <td>£55.00</td>
+				        <td>Refund Given</td>
+				        <td>6 Dec 2015 – 12:44</td>
+				      </tr>
+				      <tr class='clickable-row' data-href='http://pay-staff-tool.herokuapp.com/staff-transaction-detail'>
+				       <td>DV798657</td>
+				        <td>£38.00</td>
+				        <td>Paid</td>
+				        <td>6 Dec 2015 – 12:42</td>
+				      </tr>
+				      <tr class='clickable-row' data-href='http://pay-staff-tool.herokuapp.com/staff-transaction-detail'>
+				       <td>DV798687</td>
+				        <td>£89.00</td>
+				        <td>Paid</td>
+				        <td>6 Dec 2015 – 12:42</td>
+				      </tr>
+				      <tr class='clickable-row' data-href='http://pay-staff-tool.herokuapp.com/staff-transaction-detail'>
+				       <td>DV798227</td>
+				        <td>£38.00</td>
+				        <td>Paid</td>
+				        <td>6 Dec 2015 – 12:41</td>
+				      </tr>
+				      <tr class='clickable-row' data-href='http://pay-staff-tool.herokuapp.com/staff-transaction-detail'>
+				       <td>DV799654</td>
+				        <td>£58.00</td>
+				        <td>Paid</td>
+				        <td>6 Dec 2015 – 12:41</td>
+				      </tr>
+				      <tr class='clickable-row' data-href='http://pay-staff-tool.herokuapp.com/staff-transaction-detail'>
+				       <td>DV798644</td>
+				        <td>£32.00</td>
+				        <td>Paid</td>
+				        <td>6 Dec 2015 – 12:40</td>
+				      </tr>
+				      <tr class='clickable-row' data-href='http://pay-staff-tool.herokuapp.com/staff-transaction-detail'>
+				       <td>DV798690</td>
+				        <td>£44.00</td>
+				        <td>Paid</td>
+				        <td>6 Dec 2015 – 12:40</td>
+				      </tr>
+				      <tr class='clickable-row' data-href='http://pay-staff-tool.herokuapp.com/staff-transaction-detail'>
+				       <td>DV792537</td>
+				        <td>£38.00</td>
+				        <td>Paid</td>
+				        <td>6 Dec 2015 – 12:39</td>
+				      </tr>
+				      <tr class='clickable-row' data-href='http://pay-staff-tool.herokuapp.com/staff-transaction-detail'>
+				       <td>DV798122</td>
+				        <td>£120.00</td>
+				        <td>Paid</td>
+				        <td>6 Dec 2015 – 12:38</td>
+				      </tr>
+				    </tbody>
+  				</table>
+	</div>
+</div>
+</main>
+
+{{/content}}
+
+{{/layout}}
