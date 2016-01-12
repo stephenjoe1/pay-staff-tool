@@ -43,6 +43,7 @@
 	border-bottom: 1px solid #BFC1C3;
 	padding-bottom: 15px;
 	padding-top: 15px;
+	text-decoration: none;
 }
 
 tbody {
@@ -56,6 +57,7 @@ tr.clickable-row {
 tr.clickable-row:hover { 
 	background-color: #F8F8F8; 
 }
+
 
 .view-all {
 	font-size: 19px;
@@ -174,7 +176,7 @@ table {
 }
 
 .no-left-padding {
-	
+
 	padding-right: 30px;
 }
 
@@ -374,6 +376,49 @@ table td {
 
 .big-type-table td {
 	font-size: 24px;
+	color: white;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.right-align {
+	text-align: right;
+}
+
+.table-colour {
+	background-color: #005EA5;
+	color: white;
+}
+
+.table-colour-red {
+	background-color: #DF3034;
+	color: white;
+}
+
+.table-colour-green {
+	background-color: #00823B;
+	color: white;
+}
+
+.table-colour-grey {
+	background-color: #6F777B;
+	color: white;
+}
+
+tr.table-colour:hover { 
+	background-color: black; 
+}
+
+tr.table-colour-red:hover { 
+	background-color: black; 
+}
+
+tr.table-colour-green:hover { 
+	background-color: black; 
+}
+
+tr.table-colour-grey:hover { 
+	background-color: black; 
 }
 
 .form-label-bold {
