@@ -8,7 +8,9 @@
 	max-width: 1310px;
 }
 
-
+.header-sign-out {
+	color: white;
+}
 
 #content {
 	max-width: 1280px;
@@ -18,6 +20,9 @@
 	margin-bottom: 30px;
 }
 
+a#logo::after {
+    content: "Pay";
+}
 
 .column-three-quarters {
 	@include grid-column( 3/4 );
