@@ -1,0 +1,72 @@
+{{<layout}}
+
+{{$pageTitle}}
+	GOV.UK payment page
+{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+	<div class="grid-row">
+		<div class="column-quarter">
+			<div class="left-nav">
+				<ul>
+			      	<li><a href="/staff-dashboard">Dashboard</a></li>
+			      	<li><a href="/staff-transaction-list">Transactions</a></li>
+			      	<li><a href="/staff-upload-invoices">Upload invoices</a></li>
+			      	<li><a href="#">API keys</a></li>
+					<li><a href="#">Manage your team</a></li>
+					<li><a href="#">Settings</a></li>
+				</ul>
+			</div>	
+	    </div>
+	    <div class="column-three-quarters">
+	      <h1 class="heading-large underline">Upload invoices</h1>
+	      	<div class="overview">
+	      		<h2 class="heading-medium staff-subheading">
+    				Upload invoice details to generate reference numbers that you can send to your users.
+  				</h2>
+			 	<div class="form-group filter-button">
+	 					<button class="button">Upload Spreadsheet</button>
+	 					<a class="clear" href="staff-transaction-list">Clear filter</a>
+				</div>
+			 </div>
+
+			<div class="column-three-quarters filter-fields">
+		      	<h2 class="heading-small">
+	    			Example spreadsheet information
+	  			</h2>
+  			</div>
+
+		      	<table>
+				    <thead>
+				      <tr>
+				        <th scope="col">Ref. number</th>
+				        <th scope="col">Amount</th>
+				        <th scope="col">Status</th>
+				        <th scope="col">Time</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				      <tr class='clickable-row' data-href='http://pay-staff-tool.herokuapp.com/staff-transaction-detail-refunded'>
+				        <td>DV789045</td>
+				        <td>£96.00</td>
+				        <td>Full refund</td>
+				        <td>30/9/2015 – 10:38</td>
+				      </tr>
+				      <tr class='clickable-row' data-href='http://pay-staff-tool.herokuapp.com/staff-transaction-detail-refunded-2'>
+				        <td>DV786290</td>
+				        <td>£126.00</td>
+				        <td>Full refund</td>
+				        <td>30/9/2015 – 12:44</td>
+				      </tr>
+				      
+				    </tbody>
+  				</table>
+	</div>
+</div>
+</main>
+
+{{/content}}
+
+{{/layout}}
