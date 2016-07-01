@@ -1,10 +1,10 @@
-{% extends "layout.html" %}
+{{<layout}}
 
-{% block page_title %}
-  GOV.UK Pay
-{% endblock %}
+{{$pageTitle}}
+  GOV.UK payment page
+{{/pageTitle}}
 
-{% block content %}
+{{$content}}
 
 <main id="content" role="main">
   <form action="add-service" class="form">
@@ -30,6 +30,8 @@
   </form>
 </main>
 
-{% endblock %}
+{{/content}}
+
+{{/layout}}
 
 
