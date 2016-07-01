@@ -1,10 +1,12 @@
-{% extends "layout.html" %}
+{{<layout}}
 
-{% block page_title %}
-  GOV.UK Pay
-{% endblock %}
+{{$pageTitle}}
+  GOV.UK payment page
+{{/pageTitle}}
 
-{% block content %}
+{{$content}}
+
+
 <main id="content" role="main">
 
  <!-- {% include "includes/breadcrumb_examples.html" %} -->
@@ -43,6 +45,11 @@
       <input type="text" class="form-control" id="mobile-number">
     </div>   
 
+    {{/content}}
+
+{{/layout}}
+
+
 
     <!-- Password -->
     <div class="form-group">
@@ -65,4 +72,7 @@
   </form>
 
 </main>
-{% endblock %}
+
+{{/content}}
+
+{{/layout}}
