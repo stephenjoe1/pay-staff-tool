@@ -33,8 +33,9 @@
   ],
   "dist": {
     "shasum": "363b21e223f5ae51bc22f92f820e73f3ccc679ab",
-    "tarball": "https://registry.npmjs.org/govuk_frontend_toolkit/-/govuk_frontend_toolkit-3.1.0.tgz"
+    "tarball": "http://registry.npmjs.org/govuk_frontend_toolkit/-/govuk_frontend_toolkit-3.1.0.tgz"
   },
   "directories": {},
-  "_resolved": "https://registry.npmjs.org/govuk_frontend_toolkit/-/govuk_frontend_toolkit-3.1.0.tgz"
+  "_resolved": "https://registry.npmjs.org/govuk_frontend_toolkit/-/govuk_frontend_toolkit-3.1.0.tgz",
+  "readme": "ERROR: No README data found!"
 }
