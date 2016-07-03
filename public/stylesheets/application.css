@@ -3100,6 +3100,11 @@ table {
   padding-right: 15px;
 }
 
+.padding-grid-row-2 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .no-left-padding {
   padding-right: 30px;
 }
@@ -3493,63 +3498,6 @@ h2.heading-paypoint {
   margin-bottom: 5px;
 }
 
-.paypal-payment-summary {
-  padding-left: 15px;
-  padding-right: 30px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-.paypal {
-  margin-top: 15px;
-  color: gray;
-  font-family: Arial !important;
-  font-weight: 300;
-}
-
-.paypal-login {
-  border: 1px solid #DEE0E2;
-  padding: 15px;
-}
-
-.paypal-paynow {
-  padding: 15px;
-}
-
-.paypal button {
-  background-color: #0079c1;
-}
-
-.paypal button:hover {
-  background-color: #0079c1;
-}
-
-.paypal-details button {
-  background-color: #0079c1;
-}
-
-.paypal-details button:hover {
-  background-color: #0079c1;
-}
-
-.paypal-form {
-  margin-top: 30px;
-}
-
-.paypal-login h2 {
-  margin-top: 10px;
-  margin-bottom: 0px;
-  font-size: 24px;
-  font-weight: 300;
-  font-family: helvetica neue, Arial;
-}
-
-.paypal-label {
-  font-size: 19px;
-  font-weight: 300;
-  font-family: helvetica neue, Arial;
-}
-
 .sentsms {
   font-weight: 700;
   font-size: 19px;
@@ -3563,11 +3511,6 @@ h2.heading-paypoint {
   margin-left: 15px;
   margin-bottom: 30px;
   font-size: 19px;
-}
-
-.paypal-details {
-  border: 1px solid #DEE0E2;
-  padding: 30px;
 }
 
 .lede-link {

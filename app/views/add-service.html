@@ -1,14 +1,14 @@
-{% extends "layout.html" %}
+{{<layout}}
 
-{% block page_title %}
-  GOV.UK Pay
-{% endblock %}
+{{$pageTitle}}
+  GOV.UK payment page
+{{/pageTitle}}
 
-{% block content %}
+{{$content}}
 
 <main id="content" role="main">
   <div class="grid-row">
-    <div class="column-two-thirds">
+    <div class="column-half">
   
    <form action="dashboard" class="form">
 
@@ -37,6 +37,8 @@
   </div>
 </main>
 
-{% endblock %}
+{{/content}}
+
+{{/layout}}
 
 
