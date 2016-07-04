@@ -1470,6 +1470,10 @@ a#logo::after {
   color: white;
 }
 
+.intro-block-blue a {
+  color: white;
+}
+
 tbody {
   font-size: 14px;
 }
