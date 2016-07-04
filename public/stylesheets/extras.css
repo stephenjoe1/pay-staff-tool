@@ -2006,6 +2006,10 @@ h2.heading-paypoint {
   margin-bottom: 10px;
 }
 
+.form-control-5em {
+  max-width: 120px;
+}
+
 @media only screen and (max-width: 720px) {
   .sticky {
     position: static;
