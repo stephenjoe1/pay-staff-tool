@@ -1,10 +1,10 @@
-{% extends "layout.html" %}
+{{<layout}}
 
-{% block page_title %}
-  GOV.UK Pay
-{% endblock %}
+{{$pageTitle}}
+  GOV.UK payment page
+{{/pageTitle}}
 
-{% block content %}
+{{$content}}
 
 <main id="content" role="main">
   <div class="grid-row">
@@ -25,10 +25,15 @@
           	<input class="button" type="submit" value="Create an account">
           </a>	
       </div>
+      <p>
+        If you’ve used GOV.UK Pay before, <a href="#">sign in to your account</a>.
+      </p>
     </div>
   </div>
 </main>
 
-{% endblock %}
+{{/content}}
+
+{{/layout}}
 
 

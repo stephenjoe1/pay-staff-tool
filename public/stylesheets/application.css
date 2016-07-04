@@ -2910,11 +2910,11 @@ ol {
 }
 
 #global-header-bar {
-  max-width: 1340px;
+  max-width: 1240px;
 }
 
 #global-header .header-wrapper {
-  max-width: 1310px;
+  max-width: 1210px;
 }
 
 .header-sign-out {
@@ -2922,7 +2922,7 @@ ol {
 }
 
 #content {
-  max-width: 1280px;
+  max-width: 1180px;
 }
 
 .overview {
