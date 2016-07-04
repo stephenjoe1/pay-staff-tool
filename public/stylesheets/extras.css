@@ -1462,6 +1462,14 @@ a#logo::after {
   text-decoration: none;
 }
 
+.intro-block-blue {
+  margin-top: 45px;
+  max-width: 600px;
+  background-color: #005EA5;
+  padding: 15px 45px 45px 45px;
+  color: white;
+}
+
 tbody {
   font-size: 14px;
 }
