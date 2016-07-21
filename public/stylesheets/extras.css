@@ -1464,7 +1464,7 @@ a#logo::after {
 
 .intro-block-blue {
   margin-top: 45px;
-  max-width: 600px;
+  max-width: auto;
   background-color: #005EA5;
   padding: 15px 45px 45px 45px;
   color: white;
