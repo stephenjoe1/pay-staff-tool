@@ -88,10 +88,17 @@ tr.clickable-row:hover {
 
 .form-label-bold .form-hint {
 	font-size: 16px;
+	color: #0B0C0C;
 }
 
 .form-hint {
 	font-size: 16px;
+	color: #0B0C0C;
+}
+
+.form-hint-small {
+	font-size: 14px;
+	color: #0B0C0C;
 }
 
 .form-date .form-group {
@@ -103,8 +110,28 @@ tr.clickable-row:hover {
 	font-size: 16px;
 }
 
+.filter-section {
+	background-color: #DEE0E2;
+	height: 240px;
+	padding: 20px;
+}
+
 .filter-fields {
 	padding-left: 0;
+}
+
+.datetime-seperator {
+    width: 40px;
+    float: left;
+    line-height: 86px;
+    text-align: center;
+}
+
+.error-code {
+	// position: relative;
+	// float: left;
+	display: list-item;
+	list-style: none;
 }
 
 ::-webkit-input-placeholder {
@@ -138,7 +165,7 @@ tr.clickable-row:hover {
 }
 
 .form-control {
-    width: 90%!important;
+    width: 100%!important;
 }
 
 .dropdown-list {
@@ -386,6 +413,7 @@ table {
 table td {
 	font-size: 16px;
 	font-weight: 300;
+	vertical-align: top;
 }
 
 .big-type-table td {
@@ -436,7 +464,7 @@ tr.table-colour-grey:hover {
 }
 
 .form-label-bold {
-	font-size: 19px;
+	font-size: 16px;
 	margin-bottom: 5px;
 }
 
