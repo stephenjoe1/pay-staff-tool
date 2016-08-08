@@ -2926,7 +2926,7 @@ ol {
 }
 
 .overview {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 a#logo::after {
@@ -2975,8 +2975,12 @@ a#logo::after {
   font-size: 16px;
 }
 
-.utility-nav li:nth-child(3) {
-  margin-right: 0px;
+.utility-nav li:nth-child(2) {
+  margin-right: -5px;
+}
+
+.status-column {
+  width: 280px;
 }
 
 .service-name {
@@ -3049,8 +3053,12 @@ tr.clickable-row:hover {
   color: #0B0C0C;
 }
 
+.date-label {
+  margin-bottom: 0px !important;
+}
+
 .form-date .form-group {
-  width: 105px;
+  width: 122px;
   margin-right: 5px;
 }
 
@@ -3078,6 +3086,27 @@ tr.clickable-row:hover {
 .error-code {
   display: list-item;
   list-style: none;
+  color: #6F777B;
+}
+
+.refund-label {
+  color: #B10E1E;
+  font-size: 14px;
+  border: 2px solid #B10E1E;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  margin-left: 10px;
+}
+
+.disputed-label {
+  color: #6F777B;
+  font-size: 14px;
+  border: 2px solid #6F777B;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  margin-left: 10px;
 }
 
 ::-webkit-input-placeholder {
@@ -3100,7 +3129,9 @@ tr.clickable-row:hover {
 
 .filter-button {
   margin-top: 40px;
-  margin-left: 10px;
+  margin-left: 0px;
+  padding-top: 5px;
+  height: 30px;
 }
 
 .clear {
@@ -3358,6 +3389,15 @@ table td {
   color: white;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.little-type-table td {
+  font-size: 19px;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 5px;
 }
 
 .right-align {

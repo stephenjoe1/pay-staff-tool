@@ -14,7 +14,6 @@
 		</div>
 		<div class="column-half">
 			<ul>
-				<li><a href="#">Help</a></li>
 				<li><a href="#">John Smith</a></li>
 				<li><a href="#">Sign out</a></li>
 			</ul>
@@ -27,7 +26,6 @@
 				<ul>
 			      	<li><a href="/staff-dashboard">Dashboard</a></li>
 			      	<li><a href="/staff-transaction-list">Transactions</a></li>
-			      	<li><a href="/staff-upload-invoices">Upload invoices</a></li>
 			      	<li><a href="#">API keys</a></li>
 					<li><a href="#">Manage your team</a></li>
 					<li><a href="#">Settings</a></li>
@@ -42,6 +40,7 @@
   				</h2>
 			 </div>
 		<div class="filter-section">
+			<!-- <div class="grid-row"> -->
 			 <div class="column-third filter-fields">
 			 	<div class="form-group">
 					<label class="form-label-bold" for="full-name">
@@ -54,20 +53,30 @@
 			 <div class="column-third filter-fields">
 			 	<div class="form-group">
 					<label class="form-label-bold" for="full-name">
-				    	Status
+				    	Payment status
 				    	<span class="form-hint">Select an option</span>
 				  	</label>
 				  	<div class="dropdown">
 					  	<select name="select" class="form-control dropdown-list" id="full-name">
-						  	<option value="value1" selected>All</option>
+						  	<option value="value1" selected>All transactions</option>
+						<optgroup label="Payments">
 							<option value="value4">In progress</option>
-							<option value="value1">Success</option> 
+							<option value="value1">Successful</option> 
 							<option value="value5">Failed</option>
-							<option value="value7">User cancelled</option>
-							<option value="value8">System cancelled</option>
-							<option value="value6">Error</option>
-							<option value="value2">Full refund</option>
-							<option value="value3">Partial Refund</option>
+						</optgroup>
+						<optgroup label="Refunds">
+							 <option value="value5">All refunds</option>
+							<option value="value5">Refund in progress</option>
+							<option value="value5">Fully Refunded</option>
+							<option value="value5">Partially Refunded</option>
+							<option value="value5">Refund failed</option>
+						</optgroup>
+						<optgroup label="Disputes">
+							<option value="value5">Dispute in progress</option>
+							<option value="value5">Dispute successful</option>
+							<option value="value5">Dispute not successful</option>
+						</optgroup>
+							
 						</select>
 					</div>
 				</div>
@@ -80,9 +89,9 @@
 				  	</label>
 				  	<div class="dropdown">
 					  	<select name="select" class="form-control dropdown-list" id="full-name">
-						  	<option value="value1" selected>All</option>
-						  	<option value="value1" selected>Credit card only</option>
-						  	<option value="value1" selected>Debit card only</option>
+						  	<option value="value1" selected>All types</option>
+						  	<option value="value1">Credit card only</option>
+						  	<option value="value1">Debit card only</option>
 							<option value="value1">Visa</option> 
 							<option value="value2">Mastercard</option>
 							<option value="value3">American Express</option>
@@ -94,13 +103,16 @@
 					</div>
 				</div>
 			 </div>
+			<!-- </div>
+			<div class="grid-row"> -->
 			 <div class="column-three-quarters filter-fields">
+			 	
 			 	<div class="form-group">
-					<legend class="form-label-bold">Date range</legend>
+					<legend class="form-label-bold date-label">Date range (this will search all payment events)</legend>
 	        		<div class="form-date">
 			          
 				     <div class="form-group">
-				        <p class="form-hint">Date</p>
+				        <p class="form-hint">Date range</p>
 		            		<input class="form-control" id="full-name" name="full-name" type="text">
 		            	<p class="form-hint-small">eg 25/11/2015</p>
 				     </div>
@@ -124,19 +136,114 @@
 				        </div>
 	        		</div>
 				</div>
+
 			 </div>
+			 
 			 <div class="column-quarter filter-fields">
 			 	<div class="form-group filter-button">
-	 					<a href="staff-transaction-list-one"><button class="button">Filter</button></a>
-	 					<a class="clear" href="staff-transaction-list">Clear filter</a>
+	 					<a href="staff-transaction-list-one"><button class="button filter-button">Filter</button></a>
+	 					<!-- <a class="clear" href="staff-transaction-list">Clear filter</a> -->
 				</div>
 			 </div>
-		</div>	 
+			</div>
+		<!-- </div> -->	 
 
 			<div class="column-three-quarters filter-fields">
 		      	<h2 class="heading-small">
-	    			Showing 100 of 45,896 transactions 
+	    			45,896 transactions 
 	  			</h2>
+
+				<!-- <div class="grid-row">
+						<div class="column-half no-left-padding">
+				  			<div class="dashboard-section">
+								<table class="little-type-table">
+								    <thead>
+								      <tr>
+								        <th colspan="2">Initiated payments</th>
+								      </tr>
+								    </thead>
+								    <tbody>
+								      <tr class='clickable-row table-colour' data-href='#'>
+								        <td>582</td>
+								        <td class="right-align">£59,102</td>
+								      </tr>
+								     </tbody>
+								</table>
+
+								<table class="little-type-table">
+								    <thead>
+								      <tr>
+								        <th colspan="2">Sucessful payments</th>
+								      </tr>
+								    </thead>
+								    <tbody>
+								      <tr class='clickable-row table-colour-green' data-href='#'>
+								        <td>548</td>
+								        <td class="right-align">£52,004</td>
+								      </tr>
+								     </tbody>
+								</table>
+
+
+								<table class="little-type-table">
+								    <thead>
+								      <tr>
+								        <th colspan="2">Failed payments</th>
+								      </tr>
+								    </thead>
+								    <tbody>
+								      <tr class='clickable-row table-colour-red' data-href='#'>
+								        <td>34</td>
+								        <td class="right-align">£7,098</td>
+								      </tr>
+								     </tbody>
+								</table>
+
+								
+							</div>
+					
+						</div>
+
+						<div class="column-half">
+				  			<div class="dashboard-section">
+								<table class="little-type-table">
+								    <thead>
+								      <tr>
+								        <th colspan="2">Fully refunded payments</th>
+								      </tr>
+								    </thead>
+								    <tbody>
+								      <tr class='clickable-row table-colour-grey' data-href='#'>
+								        <td>4</td>
+								        <td class="right-align">£762</td>
+								      </tr>
+								     </tbody>
+								</table>
+
+								<table class="little-type-table">
+								    <thead>
+								      <tr>
+								        <th colspan="2">Partially refunded payments</th>
+								      </tr>
+								    </thead>
+								    <tbody>
+								      <tr class='clickable-row table-colour-grey' data-href='#'>
+								        <td>8</td>
+								        <td class="right-align">£100</td>
+								      </tr>
+								     </tbody>
+								</table>
+							</div>
+					
+						</div>
+					
+					</div> -->
+
+
+
+
+
+
 	  			<p><a href="transaction-list">Download a spreadsheet of these transactions</a></p>
 	  			<img class="" src="/public/images/next-page.png">
   			</div>
@@ -147,8 +254,8 @@
 				        <th scope="col">Reference number</th>
 				        <th scope="col">Amount</th>
 				        <th scope="col">Card type</th>
-				        <th scope="col">Status</th>
-				        <th scope="col">Date created</th>
+				        <th scope="col" class="status-column">Payment status</th>
+				        <th scope="col">Date</th>
 				      </tr>
 				    </thead>
 				    <tbody>
@@ -156,154 +263,189 @@
 				        <td>DV722045</td>
 				        <td>£116.00</td>
 				        <td>Visa</td>
-				        <td>Paid</td>
+				        <td>Successful<span class="refund-label">Partially refunded: £90.00</span></td>
 				        <td>6 Dec 2015 – 12:45</td>
 				      </tr>
 				      <tr class='clickable-row' data-href='http://pay-staff-tool.herokuapp.com/staff-transaction-detail'>
+				        <td>DV786340</td>
+				        <td>£55.00</td>
+				        <td>Visa</td>
+				        <td>Successful</td>      
+				        <td>6 Dec 2015 – 12:44</td>
+				      </tr>
+				      <tr class='clickable-row' data-href='#'>
 				        <td>DV786290</td>
 				        <td>£55.00</td>
 				        <td>Visa</td>
-				        <td>Refund Given</td>      
+				        <td>Successful</td>      
+				        <td>6 Dec 2015 – 12:44</td>
+				      </tr>
+				      <tr class='clickable-row' data-href='#'>
+				        <td>DV784490</td>
+				        <td>£55.00</td>
+				        <td>Visa</td>
+				        <td>Successful</td>      
+				        <td>6 Dec 2015 – 12:44</td>
+				      </tr>
+				      <tr class='clickable-row' data-href='#'>
+				        <td>DV786550</td>
+				        <td>£55.00</td>
+				        <td>Visa</td>
+				        <td>Successful</td>      
 				        <td>6 Dec 2015 – 12:44</td>
 				      </tr>
 				      <tr class='clickable-row' data-href='http://pay-staff-tool.herokuapp.com/staff-transaction-detail'>
 				       <td>DV798657</td>
 				        <td>£38.00</td>
 				        <td>Visa</td>
-				        <td>Paid</td>
+				        <td>Successful<span class="refund-label">Fully refunded</span></td>
 				        <td>6 Dec 2015 – 12:42</td>
+				      </tr>
+				      <tr class='clickable-row' data-href='#'>
+				        <td>DV786288</td>
+				        <td>£55.00</td>
+				        <td>Visa</td>
+				        <td>Successful</td>      
+				        <td>6 Dec 2015 – 12:44</td>
+				      </tr>
+				      <tr class='clickable-row' data-href='#'>
+				        <td>DV786292</td>
+				        <td>£55.00</td>
+				        <td>Visa</td>
+				        <td>Successful</td>      
+				        <td>6 Dec 2015 – 12:44</td>
 				      </tr>
 				      <tr class='clickable-row' data-href='http://pay-staff-tool.herokuapp.com/staff-transaction-detail'>
 				       <td>DV798687</td>
 				        <td>£89.00</td>
 				        <td>Visa</td>
-				        <td>Error – P0050 <span class="error-code">Payment provider returned an error</span></td>
+				        <td>Failed<span class="error-code">Error P0050 – Payment provider returned an error</span></td>
 				        <td>6 Dec 2015 – 12:42</td>
 				      </tr>
 				      <tr class='clickable-row' data-href='url://'>
 				       <td>DV798227</td>
 				        <td>£38.00</td>
 				        <td>Visa</td>
-				        <td>Paid</td>
+				        <td>Successful</td>
 				        <td>6 Dec 2015 – 12:41</td>
 				      </tr>
 				      <tr class='clickable-row' data-href='url://'>
-				       <td>DV799654</td>
+				       <td>DV729654</td>
 				        <td>£58.00</td>
 				        <td>Mastercard</td>
-				        <td>Paid</td>
+				        <td>Successful</td>
 				        <td>6 Dec 2015 – 12:41</td>
 				      </tr>
 				      <tr class='clickable-row' data-href='http://pay-staff-tool.herokuapp.com/staff-transaction-detail'>
 				       <td>DV798644</td>
 				        <td>£32.00</td>
 				        <td>Visa</td>
-				        <td>Paid</td>
+				        <td>Successful</td>
 				        <td>6 Dec 2015 – 12:40</td>
 				      </tr>
 				      <tr class='clickable-row' data-href='url://'>
-				       <td>DV798690</td>
+				       <td>DV798699</td>
 				        <td>£44.00</td>
 				        <td>Mastercard</td>
-				        <td>Error – P0050 <span class="error-code">Payment provider returned an error</span></td>
+				        <td>Failed<span class="error-code">Error P0050 – Payment provider returned an error</span></td>
 				        <td>6 Dec 2015 – 12:40</td>
 				      </tr>
 				      <tr class='clickable-row' data-href='http://pay-staff-tool.herokuapp.com/staff-transaction-detail'>
 				       <td>DV792537</td>
 				        <td>£38.00</td>
 				        <td>Visa</td>
-				        <td>Paid</td>
+				        <td>Successful<span class="disputed-label">Disputed</span></td>
 				        <td>6 Dec 2015 – 12:39</td>
 				      </tr>
 				      <tr class='clickable-row' data-href='url://'>
-				       <td>DV798122</td>
+				       <td>DV798102</td>
 				        <td>£120.00</td>
 				        <td>Visa</td>
-				        <td>Paid</td>
+				        <td>Successful</td>
 				        <td>6 Dec 2015 – 12:38</td>
 				      </tr>
 				      <tr class='clickable-row' data-href='url://'>
-				       <td>DV798122</td>
+				       <td>DV722122</td>
 				        <td>£120.00</td>
 				        <td>Visa</td>
-				        <td>Paid</td>
+				        <td>Failed<span class="error-code">User cancelled</span></td>
 				        <td>6 Dec 2015 – 12:38</td>
 				      </tr>
 				      <tr class='clickable-row' data-href='url://'>
-				       <td>DV798122</td>
+				       <td>DV798133</td>
 				        <td>£120.00</td>
 				        <td>Visa</td>
-				        <td>Paid</td>
+				        <td>Failed<span class="error-code">System cancelled</span></td>
 				        <td>6 Dec 2015 – 12:38</td>
 				      </tr>
 				      <tr class='clickable-row' data-href='url://'>
-				       <td>DV798122</td>
+				       <td>DV798111</td>
 				        <td>£120.00</td>
 				        <td>Visa</td>
-				        <td>Paid</td>
+				        <td>Successful</td>
 				        <td>6 Dec 2015 – 12:38</td>
 				      </tr>
 				      <tr class='clickable-row' data-href='url://'>
-				       <td>DV798122</td>
+				       <td>DV798112</td>
 				        <td>£120.00</td>
 				        <td>Mastercard</td>
-				        <td>Paid</td>
+				        <td>Successful</td>
 				        <td>6 Dec 2015 – 12:38</td>
 				      </tr>
 				      <tr class='clickable-row' data-href='url://'>
-				       <td>DV798122</td>
+				       <td>DV728120</td>
 				        <td>£120.00</td>
 				        <td>Visa</td>
-				        <td>Paid</td>
+				        <td>Successful</td>
 				        <td>6 Dec 2015 – 12:38</td>
 				      </tr>
 				      <tr class='clickable-row' data-href='url://'>
-				       <td>DV798122</td>
+				       <td>DV798109</td>
 				        <td>£120.00</td>
 				        <td>Visa</td>
-				        <td>Paid</td>
+				        <td>Successful</td>
 				        <td>6 Dec 2015 – 12:38</td>
 				      </tr>
 				      <tr class='clickable-row' data-href='url://'>
-				       <td>DV798122</td>
+				       <td>DV787121</td>
 				        <td>£120.00</td>
 				        <td>American Express</td>
-				        <td>Paid</td>
+				        <td>Successful</td>
+				        <td>6 Dec 2015 – 12:38</td>
+				      </tr>
+				      <tr class='clickable-row' data-href='url://'>
+				       <td>DV790122</td>
+				        <td>£120.00</td>
+				        <td>Visa</td>
+				        <td>Successful</td>
+				        <td>6 Dec 2015 – 12:38</td>
+				      </tr>
+				      <tr class='clickable-row' data-href='url://'>
+				       <td>DV798123</td>
+				        <td>£120.00</td>
+				        <td>Visa</td>
+				        <td>Successful</td>
+				        <td>6 Dec 2015 – 12:38</td>
+				      </tr>
+				      <tr class='clickable-row' data-href='url://'>
+				       <td>DV798902</td>
+				        <td>£120.00</td>
+				        <td>Visa</td>
+				        <td>Successful</td>
 				        <td>6 Dec 2015 – 12:38</td>
 				      </tr>
 				      <tr class='clickable-row' data-href='url://'>
 				       <td>DV798122</td>
 				        <td>£120.00</td>
 				        <td>Visa</td>
-				        <td>Paid</td>
+				        <td>Successful</td>
 				        <td>6 Dec 2015 – 12:38</td>
 				      </tr>
 				      <tr class='clickable-row' data-href='url://'>
-				       <td>DV798122</td>
+				       <td>DV798342</td>
 				        <td>£120.00</td>
 				        <td>Visa</td>
-				        <td>Paid</td>
-				        <td>6 Dec 2015 – 12:38</td>
-				      </tr>
-				      <tr class='clickable-row' data-href='url://'>
-				       <td>DV798122</td>
-				        <td>£120.00</td>
-				        <td>Visa</td>
-				        <td>Paid</td>
-				        <td>6 Dec 2015 – 12:38</td>
-				      </tr>
-				      <tr class='clickable-row' data-href='url://'>
-				       <td>DV798122</td>
-				        <td>£120.00</td>
-				        <td>Visa</td>
-				        <td>Paid</td>
-				        <td>6 Dec 2015 – 12:38</td>
-				      </tr>
-				      <tr class='clickable-row' data-href='url://'>
-				       <td>DV798122</td>
-				        <td>£120.00</td>
-				        <td>Visa</td>
-				        <td>Paid</td>
+				        <td>Successful</td>
 				        <td>6 Dec 2015 – 12:38</td>
 				      </tr>
 				    </tbody>
