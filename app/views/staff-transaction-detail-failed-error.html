@@ -1,0 +1,143 @@
+{{<layout}}
+
+{{$pageTitle}}
+	GOV.UK payment page
+{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+	<div class="grid-row">
+		<div class="column-quarter">
+			<div class="left-nav">
+				<ul>
+			      	<li><a href="/staff-dashboard">Dashboard</a></li>
+			      	<li><a href="/staff-transaction-list">Transactions</a></li>
+			      	<li><a href="/staff-upload-invoices">Upload invoices</a></li>
+			      	<li><a href="#">API keys</a></li>
+					<li><a href="#">Manage your team</a></li>
+					<li><a href="#">Settings</a></li>
+				</ul>
+			</div>	
+	    </div>
+	    <div class="column-three-quarters">
+	      <h1 class="heading-large underline">Transactions</h1>
+	      	<div class="overview">
+	      	<div class="back">
+				<a href="javascript:history.back()">&#9664; Back</a>
+			</div>
+	      		<h2 class="heading-medium staff-subheading">
+    				Transaction detail
+  				</h2>
+			 </div>
+
+			<div class="column-three-quarters filter-fields">
+
+		    <table>
+		      	<tbody>
+			      	<tr>
+			      		<td>Reference number:</td> 
+			      		<td>DV798687</td>
+			      	</tr>
+			      	<tr>
+			      		<td>Email address:</td> 
+			      		<td>stephenmccarthy@hotmail.com</td>
+			      	</tr>
+			      	<tr>
+						<td>Amount:</td>
+						<td>£89.00</td>
+					</tr>
+					<tr>
+						<td>Status:</td> 
+						<td>Failed – Error P0050 – Payment provider returned an error</td>
+					</tr>
+					<tr>
+						<td>Type:</td>
+						 <td>Visa credit</td>
+					</tr>
+					<tr>
+						<td>Provider:</td>
+						<td>Barclays</td>
+					</tr>
+					<tr>
+						<td>Time:</td>
+						<td>1 Jul 2016 – 08:32</td>
+					</tr>
+					<tr>
+						<td>Transaction ID:</td>
+						 <td>20150602153345</td>
+					</tr>
+					<tr>
+						<td>GOV.UK payment ID:</td> 
+						<td>42250259</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h2 class="heading-medium">Transaction events</h2>
+
+			<table>
+		      	<tbody>   		
+					<tr>
+						<td>Failed – Error P0050 – Payment provider returned an error</td>
+						<td>£89.00</td> 
+						<td>1 Jul 2016 – 08:32</td>
+					</tr>
+					<tr>
+						<td>Card details submitted for authorisation</td>
+						<td>£89.00</td> 
+						<td>1 Jul 2016 – 08:32</td>
+					</tr>
+					<tr>
+						<td>User entering card details</td>
+						<td>£89.00</td> 
+						<td>1 Jul 2016 – 08:30</td>
+					</tr>
+					<tr>
+						<td>Payment created</td>
+						<td>£89.00</td> 
+						<td>1 Jul 2016 – 08:30</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h2 class="heading-medium"></h2>
+
+			<details>
+			    <summary><span class="summary">View logs</span></summary>
+			    <div class="panel panel-border-narrow">
+			      <table>
+		      	<tbody>
+			     	<tr>
+			      		<td>200</td> 
+			      		<td>POST/v1/charges/ch_16786t9823rjhjf9q9797rihkjhsoivh/refunds</td>
+			      		<td>30 Sep 2015 11:15:32</td>
+			      	</tr>
+			      	<tr>
+						<td>200</td>
+						<td>POST/v1/charges/ch_16786t9823rjhjf9q9797rihkjhsoivh/refunds</td>
+						<td>18 Sep 2015 18:12:38</td>
+					</tr>
+					<tr>
+						<td>200</td> 
+						<td>POST/v1/charges/</td>
+						<td>18 Sep 2015 18:12:34</td>
+					</tr>
+					<tr>
+						<td>200</td> 
+						<td>POST/v1/ctokens</td>
+						<td>18 Sep 2015 18:12:34</td>
+					</tr>
+				</tbody>
+			</table>
+			    </div>
+  			</details>
+
+		</div>
+	</div>
+</div>
+</main>
+
+{{/content}}
+
+{{/layout}}
