@@ -3112,6 +3112,19 @@ tr.clickable-row:hover {
   list-style: none;
 }
 
+.refund-button-area {
+  vertical-align: right;
+  margin-left: 20px;
+}
+
+.refund-button {
+  background-color: #B10E1E;
+}
+
+.refund-button:hover {
+  background-color: #800000;
+}
+
 .disputed-label {
   color: #6F777B;
   font-size: 14px;
