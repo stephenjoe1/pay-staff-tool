@@ -59,10 +59,23 @@
 				  	<div class="dropdown">
 					  	<select name="select" class="form-control dropdown-list" id="full-name">
 						  	<option value="value1" selected>All transactions</option>
+						<optgroup label="Payments">
 							<option value="value4">In progress</option>
 							<option value="value1">Successful</option> 
 							<option value="value5">Failed</option>
-							<option value="value5">Refunds</option>
+						</optgroup>
+						<optgroup label="Refunds">
+							<option value="value5">Refund in progress</option>
+							<option value="value5">Fully Refunded</option>
+							<option value="value5">Partially Refunded</option>
+							<option value="value5">Refund failed</option>
+						</optgroup>
+						<optgroup label="Disputes">
+							<option value="value5">Dispute in progress</option>
+							<option value="value5">Dispute successful</option>
+							<option value="value5">Dispute not successful</option>
+						</optgroup>
+							
 						</select>
 					</div>
 				</div>
