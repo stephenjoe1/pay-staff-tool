@@ -3618,3 +3618,14 @@ h2.heading-paypoint {
     max-width: 300px;
   }
 }
+
+.intro-block {
+  margin: 30px 0 20px 0;
+  padding: 30px 30px 30px 30px;
+  background: #005ea5;
+  color: #fff;
+}
+
+.intro-block .heading-large {
+  margin-top: 0;
+}

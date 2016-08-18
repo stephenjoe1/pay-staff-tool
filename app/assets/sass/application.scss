@@ -31,3 +31,20 @@
 // either add and import new partial files, or modify those in GOV.UK elements to fit your user needs.
 @import 'extras';
 @import 'paypal';
+
+
+
+// Sonia's styles
+
+
+.intro-block {
+  margin: 30px 0 20px 0;
+  padding: 30px 30px 30px 30px;
+  background: $govuk-blue;
+  color: #fff;
+  
+}
+
+.intro-block .heading-large {
+  margin-top: 0;
+}
