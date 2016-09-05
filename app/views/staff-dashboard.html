@@ -7,13 +7,28 @@
 {{$content}}
 
 <main id="content" role="main">
+
+<div class="grid-row">
+	<div class="utility-nav">
+		<div class="column-half">
+			<p class="service-name">Your Service Name</p>
+		</div>
+		<div class="column-half">
+			<ul>
+				<li><a href="#">John Smith</a></li>
+				<li><a href="#">Sign out</a></li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+
 	<div class="grid-row">
 		<div class="column-quarter">
 			<div class="left-nav">
 				<ul>
 			      	<li><a href="/staff-dashboard">Dashboard</a></li>
-			      	<li><a href="/staff-transaction-list">Transactions</a></li>
-			      	<li><a href="/staff-upload-invoices">Upload invoices</a></li>
+			      	<li><a href="/staff-transaction-list-double-line">Transactions</a></li>
 			      	<li><a href="#">API keys</a></li>
 					<li><a href="#">Manage your team</a></li>
 					<li><a href="#">Settings</a></li>
@@ -32,7 +47,8 @@
 				 	<div class="form-group">
 					  	<div class="dropdown">
 						  	<select name="select" class="form-control dropdown-list" id="full-name">
-							  	<option value="value1" selected>Today</option> 
+							  	<option value="value1" selected>All</option>
+							  	<option value="value1">Today</option> 
 								<option value="value2">7 days</option>
 								<option value="value3">30 days</option>
 								<option value="value4">6 months</option>
@@ -47,20 +63,7 @@
 		<div class="grid-row">
 		<div class="column-half no-left-padding">
   			<div class="dashboard-section">
-				<table class="big-type-table">
-				    <thead>
-				      <tr>
-				        <th colspan="2">Initiated payments</th>
-				      </tr>
-				    </thead>
-				    <tbody>
-				      <tr class='clickable-row table-colour' data-href='#'>
-				        <td>582</td>
-				        <td class="right-align">£59,102</td>
-				      </tr>
-				     </tbody>
-				</table>
-
+				
 				<table class="big-type-table">
 				    <thead>
 				      <tr>
@@ -68,9 +71,9 @@
 				      </tr>
 				    </thead>
 				    <tbody>
-				      <tr class='clickable-row table-colour-green' data-href='#'>
-				        <td>548</td>
-				        <td class="right-align">£52,004</td>
+				      <tr class='clickable-row table-colour' data-href='#'>
+				        <td>17</td>
+				        <td class="right-align">£1,074.00</td>
 				      </tr>
 				     </tbody>
 				</table>
@@ -83,9 +86,9 @@
 				      </tr>
 				    </thead>
 				    <tbody>
-				      <tr class='clickable-row table-colour-red' data-href='#'>
-				        <td>34</td>
-				        <td class="right-align">£7,098</td>
+				      <tr class='clickable-row table-colour-grey' data-href='#'>
+				        <td>2</td>
+				        <td class="right-align">£209.00</td>
 				      </tr>
 				     </tbody>
 				</table>
@@ -104,9 +107,9 @@
 				      </tr>
 				    </thead>
 				    <tbody>
-				      <tr class='clickable-row table-colour-grey' data-href='#'>
-				        <td>4</td>
-				        <td class="right-align">£762</td>
+				      <tr class='clickable-row table-colour-red' data-href='#'>
+				        <td>1</td>
+				        <td class="right-align">£38.00</td>
 				      </tr>
 				     </tbody>
 				</table>
@@ -118,9 +121,9 @@
 				      </tr>
 				    </thead>
 				    <tbody>
-				      <tr class='clickable-row table-colour-grey' data-href='#'>
-				        <td>8</td>
-				        <td class="right-align">£100</td>
+				      <tr class='clickable-row table-colour-red' data-href='#'>
+				        <td>1</td>
+				        <td class="right-align">£90.00</td>
 				      </tr>
 				     </tbody>
 				</table>
