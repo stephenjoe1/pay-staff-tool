@@ -42,41 +42,34 @@
 
 		<div class="grid-row filter-section">
 			<!-- <div class="grid-row"> -->
-			 <div class="column-third filter-fields">
+			 <div class="column-quarter filter-fields">
 			 	<div class="form-group">
 					<label class="form-label-bold" for="full-name">
-				    	Reference number or email
-				    	<span class="form-hint">Enter full or partial details</span>
+				    	Reference number
+				    	<span class="form-hint">Enter full or partial number</span>
 				  	</label>
 				  	<input class="form-control" id="full-name" name="full-name" type="text">
 				</div>
 			 </div>
-			 <div class="column-third filter-fields">
+			 <div class="column-quarter filter-fields">
 			 	<div class="form-group">
 					<label class="form-label-bold" for="full-name">
-				    	Payment status
-				    	<span class="form-hint">Select an option</span>
+				    	Email address
+				    	<span class="form-hint">Enter full or partial email</span>
 				  	</label>
-				  	<div class="dropdown">
-					  	<select name="select" class="form-control dropdown-list" id="full-name">
-						  	<option value="value1" selected>All transactions</option>
-							<option value="value4">In progress</option>
-							<option value="value1">Successful</option> 
-							<option value="value5">Failed</option>
-							<option value="value5">Refunds</option>
-						</select>
-					</div>
+				  	<input class="form-control" id="full-name" name="full-name" type="text">
 				</div>
 			 </div>
-			 <div class="column-third filter-fields">
+			 
+			 <div class="column-quarter filter-fields">
 			 	<div class="form-group">
 					<label class="form-label-bold" for="full-name">
-				    	Card type
-				    	<span class="form-hint">Select an option</span>
+				    	Card brand
+				    	<span class="form-hint">Select a brand</span>
 				  	</label>
 				  	<div class="dropdown">
 					  	<select name="select" class="form-control dropdown-list" id="full-name">
-						  	<option value="value1" selected>All types</option>
+						  	<option value="value1" selected>All brands</option>
 						  	<option value="value1">Credit card only</option>
 						  	<option value="value1">Debit card only</option>
 							<option value="value1">Visa</option> 
@@ -86,6 +79,24 @@
 							<option value="value5">Diner's Club</option>
 							<option value="value6">Discover</option>
 							<option value="value7">Union Pay</option>
+						</select>
+					</div>
+				</div>
+			 </div>
+
+			 <div class="column-quarter filter-fields">
+			 	<div class="form-group">
+					<label class="form-label-bold" for="full-name">
+				    	Status
+				    	<span class="form-hint">Select an option</span>
+				  	</label>
+				  	<div class="dropdown">
+					  	<select name="select" class="form-control dropdown-list" id="full-name">
+						  	<option value="value1" selected>All transactions</option>
+							<option value="value4">In progress</option>
+							<option value="value1">Successful</option> 
+							<option value="value5">Failed</option>
+							<option value="value5">Refunds</option>
 						</select>
 					</div>
 				</div>
@@ -138,7 +149,7 @@
 		      	<h2 class="heading-small">
 	    			51 transactions 
 	  			</h2>
-	  			<img src="/public/images/list-breakdown.png">
+	  			<!-- <img src="/public/images/list-breakdown.png"> -->
 
 				
 
@@ -152,9 +163,9 @@
 				        <th scope="col">Reference number</th>
 				        <th scope="col">Email address</th>
 				        <th scope="col">Amount</th>
-				        <th scope="col">Card type</th>
-				        <th scope="col" class="status-column">Payment status</th>
-				        <th scope="col">Date created</th>
+				        <th scope="col">Card brand</th>
+				        <th scope="col" class="status-column">Status</th>
+				        <th scope="col">Date</th>
 				      </tr>
 				    </thead>
 				    <tbody>
