@@ -28,7 +28,7 @@
 			<div class="left-nav">
 				<ul>
 			      	<li><a href="/staff-dashboard">Dashboard</a></li>
-			      	<li><a href="/staff-transaction-list-double-line-3">Transactions</a></li>
+			      	<li><a href="/staff-transaction-list-double-line-4">Transactions</a></li>
 			      	<li><a href="#">API keys</a></li>
 					<li><a href="#">Manage your team</a></li>
 					<li><a href="#">Settings</a></li>
@@ -39,7 +39,7 @@
 	      <h1 class="heading-large underline">Transactions</h1>
 	      	<div class="overview">
 	      	<div class="back">
-				<a href="/staff-transaction-list-double-line-3">&#9664; Back to transactions list</a>
+				<a href="/staff-transaction-list-double-line-4">&#9664; Back to transactions list</a>
 			</div>
 	      		<h2 class="heading-medium staff-subheading">
     				Transaction detail
@@ -60,16 +60,21 @@
 			      	</tr>
 			      	<tr>
 						<td>Payment amount:</td>
-						<td>£70.00 (£20.00 balance remaining)</td>
+						<td>£70.00 (fully refunded)</td>
 					</tr>
 					<tr>
 						<td>Status:</td> 
 						<td>Successful payment <span class="refund-label">Partially refunded £50.00 on 11 Oct 2016 at 20:08</span>
+						<span class="refund-label">Partially refunded remaining £20.00 on 12 Oct 2016 at 10:05</span>
 						</td>
 					</tr>
+					<!-- <tr>
+						<td>Refund status:</td> 
+						<td>Partially refunded (5 Sep 2016 – 11:08)</td>
+					</tr> -->
 					<tr>
 						<td>Refunded amount:</td> 
-						<td>–£50.00</td>
+						<td>–£70.00</td>
 					</tr>
 					<tr>
 						<td>Type:</td>
@@ -98,6 +103,16 @@
 
 			<table>
 		      	<tbody>
+		      		<tr>
+						<td>Partial refund of £20.00 successful</td>
+						<td>–£20.00</td>
+						<td>12 Oct 2016 – 10:05</td>
+					</tr>
+					<tr>
+						<td>Partial refund of £20.00 initiated</td>
+						<td>–£20.00</td>
+						<td>12 Oct 2016 – 08:24</td>
+					</tr>
 		      		<tr>
 						<td>Partial refund of £50.00 successful</td>
 						<td>–£50.00</td>
@@ -178,7 +193,7 @@
 					  </div>
 					</form>
 
-				<a href="/staff-transaction-detail-partial-refund-after-2" title="refund" class="#"><button class="button refund-button">Refund payment</button></a>
+				<a href="#" title="refund" class="#"><button class="button refund-button">Refund payment</button></a>
 				<a href="#close" title="Close" class="close">Cancel</a>
 				</div>			
 			</div>
