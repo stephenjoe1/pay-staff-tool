@@ -23,7 +23,7 @@
 
 .modalDialog > div {
 	width: 400px;
-	height: 500px;
+	height: 470px;
 	position: relative;
 	margin: 10% auto;
 	padding: 5px 20px 13px 20px;
@@ -51,11 +51,20 @@
     border-left: 10px solid gray;
 }
 
-
-
 .partial-amount-input {
 	max-width: 150px;
 }
+
+.close {
+	margin-top: 10px;
+	display: inline-block;
+}
+
+.heading-medium-refund {
+	margin-top: 30px;
+}
+
+
 
 #global-header-bar {
 	max-width: 1240px;

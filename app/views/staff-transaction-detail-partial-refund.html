@@ -179,11 +179,42 @@
 
 		</div>
 		<div class="column-quarter">
-				<div class="form-group refund-button-area">
-	 					<a href="#"><button class="button refund-button">Refund payment</button></a>
-	 					<p class="form-hint"> You can also give partial refunds</p>
-				</div>
+			<a href="#openModal"><button class="button refund-button">Refund payment</button><p class="form-hint">You can also give partial refunds</p></a>
+			<div id="openModal" class="modalDialog">
+				<div>
+					<h2 class="heading-medium heading-medium-refund">Refund payment</h2>
+
+					<form>
+					  <div class="form-group">
+					    <fieldset>
+
+					      <legend class="visuallyhidden">How do you want to be contacted?</legend>
+
+					      <label class="block-label block-label-fixed-width" data-target="contact-by-email" for="example-contact-by-email">
+					        <input id="example-contact-by-email" type="radio" name="radio-contact-group" value="Yes">
+					        <span class="heading-small">Full refund</span>
+					        <br>Refund the full amount of £70.00
+					      </label>
+
+					      <label class="block-label block-label-fixed-width" data-target="contact-by-phone" for="example-contact-by-phone">
+					        <input id="example-contact-by-phone" type="radio" name="radio-contact-group" value="No">
+					        <span class="heading-small">Partial refund</span>
+					        <br>Refund a partial amount
+					      </label>
+						      <div class="panel panel-border-narrow js-hidden" id="contact-by-phone">
+						        <label class="form-label" for="contact-phone">Enter refund amount</label> £
+						        <input class="form-control partial-amount-input" name="contact-phone" type="text" id="contact-phone">
+						      </div>
+					    </fieldset>
+
+					  </div>
+					</form>
+
+				<a href="/staff-transaction-detail-full-refund-after" title="refund" class="#"><button class="button refund-button">Refund payment</button></a>
+				<a href="#close" title="Close" class="close">Cancel</a>
+				</div>			
 			</div>
+		</div>	
 	</div>
 </div>
 </main>

@@ -21,6 +21,7 @@
 		</div>
 	</div>
 	</div>
+
 	
 	<div class="grid-row">
 		<div class="column-quarter">
@@ -37,9 +38,9 @@
 	    <div class="column-three-quarters">
 	      <h1 class="heading-large underline">Transactions</h1>
 	      	<div class="overview">
-		      	<div class="back">
-					<a href="javascript:history.back()">&#9664; Back</a>
-				</div>
+	      	<div class="back">
+				<a href="javascript:history.back()">&#9664; Back</a>
+			</div>
 	      		<h2 class="heading-medium staff-subheading">
     				Transaction detail
   				</h2>
@@ -50,8 +51,8 @@
 		    <table>
 		      	<tbody>
 			      	<tr>
-			      		<td>User reference number:</td> 
-			      		<td>DV798657</td>
+			      		<td>Reference number:</td> 
+			      		<td>DV786340</td>
 			      	</tr>
 			      	<tr>
 			      		<td>Email address:</td> 
@@ -59,19 +60,28 @@
 			      	</tr>
 			      	<tr>
 						<td>Payment amount:</td>
-						<td>£38.00</td>
+						<td>£70.00 (£20.00 remaining)</td>
 					</tr>
 					<tr>
 						<td>Status:</td> 
-						<td>Successful payment</td>
+						<td>Successful payment <span class="refund-label">Partially refunded £50.00 on 11 Oct 2016 at 13:08</span>
+						</td>
+					</tr>
+					<!-- <tr>
+						<td>Refund status:</td> 
+						<td>Partially refunded (5 Sep 2016 – 11:08)</td>
+					</tr> -->
+					<tr>
+						<td>Refunded amount:</td> 
+						<td>–£50.00</td>
 					</tr>
 					<tr>
 						<td>Type:</td>
-						 <td>Visa debit</td>
+						 <td>Visa credit</td>
 					</tr>
 					<tr>
 						<td>Date:</td>
-						<td>4 Sep 2016 – 23:04</td>
+						<td>10 Oct 2016 – 18:17</td>
 					</tr>
 					<tr>
 						<td>Provider:</td>
@@ -92,42 +102,54 @@
 
 			<table>
 		      	<tbody>
+		      		<tr>
+						<td>Partial refund of £50.00 successful</td>
+						<td>–£50.00</td>
+						<td>11 Oct 2016 – 13:08</td>
+					</tr>
+		      		<tr>
+						<td>Partial refund of £50.00 initiated</td>
+						<td>–£50.00</td>
+						<td>11 Oct 2016 – 07:22</td>
+					</tr>
 			      	<tr>
 						<td>Payment successful</td>
-						<td>£38.00</td>
-						<td>4 Sep 2016 – 23:04</td>
+						<td>£70.00</td>
+						<td>10 Oct 2016 – 18:16</td>
 					</tr>
 			      	<tr>
 						<td>Payment submitted</td>
-						<td>£38.00</td>
-						<td>4 Sep 2016 – 23:04</td>
+						<td>£70.00</td>
+						<td>10 Oct 2016 – 18:16</td>
 					</tr>
 					<tr>
 						<td>Authorisation succeeded</td>
-						<td>£38.00</td> 
-						<td>4 Sep 2016 – 23:03</td>
+						<td>£70.00</td> 
+						<td>10 Oct 2016 – 18:16</td>
 					</tr>
 					<tr>
 						<td>Card details submitted for authorisation</td>
-						<td>£38.00</td> 
-						<td>4 Sep 2016 – 23:03</td>
+						<td>£70.00</td> 
+						<td>10 Oct 2016 – 18:16</td>
 					</tr>
 					<tr>
 						<td>User entering card details</td>
-						<td>£38.00</td> 
-						<td>4 Sep 2016 – 23:02</td>
+						<td>£70.00</td> 
+						<td>10 Oct 2016 – 18:16</td>
 					</tr>
 					<tr>
 						<td>Payment created</td>
-						<td>£38.00</td> 
-						<td>4 Sep 2016 – 23:02</td>
+						<td>£70.00</td> 
+						<td>10 Oct 2016 – 18:16</td>
 					</tr>
 				</tbody>
 			</table>
 
 			<h2 class="heading-medium"></h2>
-		</div>
 
+			
+
+		</div>
 		<div class="column-quarter">
 			<a href="#openModal"><button class="button refund-button">Refund payment</button><p class="form-hint">You can also give partial refunds</p></a>
 			<div id="openModal" class="modalDialog">
