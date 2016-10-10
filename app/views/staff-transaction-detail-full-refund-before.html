@@ -37,9 +37,9 @@
 	    <div class="column-three-quarters">
 	      <h1 class="heading-large underline">Transactions</h1>
 	      	<div class="overview">
-	      	<div class="back">
-				<a href="javascript:history.back()">&#9664; Back</a>
-			</div>
+		      	<div class="back">
+					<a href="javascript:history.back()">&#9664; Back</a>
+				</div>
 	      		<h2 class="heading-medium staff-subheading">
     				Transaction detail
   				</h2>
@@ -58,31 +58,27 @@
 			      		<td>stephenmccarthy@hotmail.com</td>
 			      	</tr>
 			      	<tr>
-						<td> Payment amount:</td>
+						<td>Payment amount:</td>
 						<td>£38.00</td>
 					</tr>
 					<tr>
 						<td>Status:</td> 
-						<td>Successful payment <span class="refund-label">Fully refunded on 5 Sep 2016 at 10:28</span></td>
-					</tr>
-					<tr>
-						<td>Refunded amount:</td> 
-						<td>–£38.00</td>
+						<td>Successful payment</td>
 					</tr>
 					<tr>
 						<td>Type:</td>
 						 <td>Visa debit</td>
 					</tr>
 					<tr>
-						<td>Provider:</td>
-						<td>Barclays</td>
-					</tr>
-					<tr>
 						<td>Date:</td>
 						<td>4 Sep 2016 – 23:04</td>
 					</tr>
 					<tr>
-						<td>Transaction ID:</td>
+						<td>Provider:</td>
+						<td>Barclays</td>
+					</tr>
+					<tr>
+						<td>Provider ID:</td>
 						 <td>20150602153345</td>
 					</tr>
 					<tr>
@@ -96,16 +92,6 @@
 
 			<table>
 		      	<tbody>
-		      		<tr>
-						<td>Full refund successful</td>
-						<td>–£38.00</td>
-						<td>5 Sep 2016 – 10:28</td>
-					</tr>
-		      		<tr>
-						<td>Full refund initiated</td>
-						<td>–£38.00</td>
-						<td>5 Sep 2016 – 10:01</td>
-					</tr>
 			      	<tr>
 						<td>Payment successful</td>
 						<td>£38.00</td>
@@ -172,6 +158,43 @@
   			</details>
 
 		</div>
+		<div class="column-quarter">
+			<a href="#openModal"><button class="button refund-button">Refund payment</button><p class="form-hint">You can also give partial refunds</p></a>
+			<div id="openModal" class="modalDialog">
+				<div>
+					<h2 class="heading-medium">Refund payment</h2>
+
+					<form>
+					  <div class="form-group">
+					    <fieldset>
+
+					      <legend class="visuallyhidden">How do you want to be contacted?</legend>
+
+					      <label class="block-label block-label-fixed-width" data-target="contact-by-email" for="example-contact-by-email">
+					        <input id="example-contact-by-email" type="radio" name="radio-contact-group" value="Yes">
+					        <span class="heading-small">Full refund</span>
+					        <br>Refund the full amount of £70.00
+					      </label>
+
+					      <label class="block-label block-label-fixed-width" data-target="contact-by-phone" for="example-contact-by-phone">
+					        <input id="example-contact-by-phone" type="radio" name="radio-contact-group" value="No">
+					        <span class="heading-small">Partial refund</span>
+					        <br>Refund a partial amount
+					      </label>
+						      <div class="panel panel-border-narrow js-hidden" id="contact-by-phone">
+						        <label class="form-label" for="contact-phone">Refund amount</label> £
+						        <input class="form-control partial-amount-input" name="contact-phone" type="text" id="contact-phone">
+						      </div>
+					    </fieldset>
+
+					  </div>
+					</form>
+
+				<a href="/staff-transaction-detail-full-refund-after" title="refund" class="#"><button class="button refund-button">Refund payment</button></a>
+				<a href="#close" title="Close" class="close">Cancel</a>
+				</div>			
+			</div>
+			</div>	
 	</div>
 </div>
 </main>
